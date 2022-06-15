@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -645,6 +645,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -662,42 +698,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -989,14 +989,14 @@ data2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">tribb
 <span style="color:#a6e22e">colnames</span>(data2) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Country&#34;</span>,<span style="color:#e6db74">&#34;x&#34;</span>, <span style="color:#e6db74">&#34;A lot&#34;</span>, <span style="color:#e6db74">&#34;Somewhat&#34;</span>, <span style="color:#e6db74">&#34;Not much&#34;</span>, <span style="color:#e6db74">&#34;Not at all&#34;</span>, <span style="color:#e6db74">&#34;DK/Refused&#34;</span>, <span style="color:#e6db74">&#34;Total&#34;</span>)
 </code></pre></div><p>Below is a glimpse of our data:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">head</span>(data1, <span style="color:#ae81ff">3</span>)
-</code></pre></div><pre><code>#&gt; # A tibble: 3 x 5
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 3 x 5
 #&gt;   Country  Political_issues `News about govt.~ `News accuratel~ `Most important~
 #&gt;   &lt;chr&gt;               &lt;int&gt;              &lt;int&gt;            &lt;int&gt;            &lt;int&gt;
 #&gt; 1 United ~               47                 58               56               61
 #&gt; 2 Canada                 73                 79               78               82
 #&gt; 3 France                 47                 54               62               73
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">head</span>(data2, <span style="color:#ae81ff">3</span>)
-</code></pre></div><pre><code>#&gt; # A tibble: 3 x 8
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 3 x 8
 #&gt;   Country    x       `A lot` Somewhat `Not much` `Not at all` `DK/Refused` Total
 #&gt;   &lt;chr&gt;      &lt;chr&gt;     &lt;int&gt;    &lt;int&gt;      &lt;int&gt;        &lt;int&gt;        &lt;int&gt; &lt;int&gt;
 #&gt; 1 United St~ Spring~      15       36         24           23            2   100
@@ -1012,7 +1012,7 @@ data_f <span style="color:#f92672">&lt;-</span> dataset <span style="color:#f926
   <span style="color:#a6e22e">select</span>(Country,Political_issues,gov)
 
 <span style="color:#a6e22e">head</span>(data_f, <span style="color:#ae81ff">3</span>)
-</code></pre></div><pre><code>#&gt;     Country Political_issues gov
+</code></pre></div><pre tabindex="0"><code>#&gt;     Country Political_issues gov
 #&gt; 1 Argentina               37  22
 #&gt; 2 Australia               48  48
 #&gt; 3    Brazil               45  24
@@ -1041,7 +1041,7 @@ data_f <span style="color:#f92672">&lt;-</span> data_f <span style="color:#f9267
 
 <span style="color:#75715e"># quick check</span>
 <span style="color:#a6e22e">head</span>(data_f, <span style="color:#ae81ff">3</span>)
-</code></pre></div><pre><code>#&gt;     Country Political_issues gov         region
+</code></pre></div><pre tabindex="0"><code>#&gt;     Country Political_issues gov         region
 #&gt; 1 Argentina               37  22  South America
 #&gt; 2 Australia               48  48 Asia &amp; Oceania
 #&gt; 3    Brazil               45  24  South America

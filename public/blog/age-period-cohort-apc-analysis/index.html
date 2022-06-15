@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -648,6 +648,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -665,42 +701,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -935,7 +935,7 @@ suicides <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">re
 
 <span style="color:#75715e"># quick check</span>
 <span style="color:#a6e22e">glimpse</span>(suicides)
-</code></pre></div><pre><code>#&gt; Observations: 27,820
+</code></pre></div><pre tabindex="0"><code>#&gt; Observations: 27,820
 #&gt; Variables: 6
 #&gt; $ suicides &lt;dbl&gt; 21, 16, 14, 1, 9, 1, 6, 4, 1, 0, 0, 0, 2, 17, 1, 14, 4, 8,...
 #&gt; $ age      &lt;dbl&gt; 20, 44, 20, 75, 30, 75, 44, 30, 64, 10, 64, 10, 75, 20, 75...
@@ -960,7 +960,7 @@ suicides <span style="color:#f92672">&lt;-</span> suicides <span style="color:#f
   <span style="color:#a6e22e">select</span>(suicides, age, age_squared, period, cohort, <span style="color:#a6e22e">everything</span>())
 
 suicides
-</code></pre></div><pre><code>#&gt; # A tibble: 27,820 x 7
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 27,820 x 7
 #&gt;    suicides   age age_squared period cohort sex    country
 #&gt;       &lt;dbl&gt; &lt;dbl&gt;       &lt;dbl&gt; &lt;fct&gt;  &lt;fct&gt;  &lt;chr&gt;  &lt;chr&gt;  
 #&gt;  1       21    20         400 1987   1967   male   Albania
@@ -980,7 +980,7 @@ suicides
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">apc_lm <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(suicides <span style="color:#f92672">~</span> age <span style="color:#f92672">+</span> age_squared <span style="color:#f92672">+</span> period <span style="color:#f92672">+</span> cohort, suicides)
 
 <span style="color:#a6e22e">summary</span>(apc_lm)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; Call:
 #&gt; lm(formula = suicides ~ age + age_squared + period + cohort, 
 #&gt;     data = suicides)
@@ -1130,7 +1130,7 @@ suicides
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">apc_tidy <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">tidy</span>(apc_lm)
 
 apc_tidy
-</code></pre></div><pre><code>#&gt; # A tibble: 128 x 5
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 128 x 5
 #&gt;    term        estimate std.error statistic  p.value
 #&gt;    &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
 #&gt;  1 (Intercept) -339.      86.8      -3.91   9.40e- 5
@@ -1155,7 +1155,7 @@ apc_tidy
   <span style="color:#a6e22e">spread</span>(key, value)
 
 pc_tidy
-</code></pre></div><pre><code>#&gt; # A tibble: 125 x 3
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 125 x 3
 #&gt;    estimate cohort period
 #&gt;       &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
 #&gt;  1   -177.      NA   2016
@@ -1197,7 +1197,7 @@ cohort_coef <span style="color:#f92672">&lt;-</span> pc_tidy <span style="color:
   <span style="color:#a6e22e">arrange</span>(x)
 
 apc_all
-</code></pre></div><pre><code>#&gt; # A tibble: 131 x 3
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 131 x 3
 #&gt;    group             x     y
 #&gt;    &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt;
 #&gt;  1 Age Effect       10 272. 
@@ -1224,7 +1224,7 @@ apc_all
   )
 
 suicides_male_us
-</code></pre></div><pre><code>#&gt; # A tibble: 186 x 7
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 186 x 7
 #&gt;    suicides   age age_squared period cohort sex   country      
 #&gt;       &lt;dbl&gt; &lt;dbl&gt;       &lt;dbl&gt; &lt;fct&gt;  &lt;fct&gt;  &lt;chr&gt; &lt;chr&gt;        
 #&gt;  1     2177    75        5625 1985   1910   male  United States
@@ -1242,7 +1242,7 @@ suicides_male_us
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">apc_lm <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(suicides <span style="color:#f92672">~</span> age <span style="color:#f92672">+</span> age_squared <span style="color:#f92672">+</span> period <span style="color:#f92672">+</span> cohort, suicides_male_us)
 
 <span style="color:#a6e22e">summary</span>(apc_lm)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; Call:
 #&gt; lm(formula = suicides ~ age + age_squared + period + cohort, 
 #&gt;     data = suicides_male_us)
@@ -1426,7 +1426,7 @@ cohort_coef <span style="color:#f92672">&lt;-</span> pc_tidy <span style="color:
   <span style="color:#a6e22e">arrange</span>(x)
 
 apc_all_male_us
-</code></pre></div><pre><code>#&gt; # A tibble: 130 x 3
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 130 x 3
 #&gt;    group             x       y
 #&gt;    &lt;chr&gt;         &lt;dbl&gt;   &lt;dbl&gt;
 #&gt;  1 Age Effect       10  3900. 

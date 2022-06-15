@@ -13,7 +13,7 @@
       <pubDate>Wed, 28 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/image-colorization/</guid>
-      <description>body { text-align: justify}  Image Colorization Deep Learning - Convolutional Neural Network Introduction Image colorization is the process of assigning colors to a grayscale image to make it more aesthetically appealing and perceptually meaningful. These are recognized as sophisticated tasks than often require prior knowledge of image content and manual adjustments to achieve artifact-free quality. Also, since objects can have different colors, there are many possible ways to assign colors to pixels in an image, which means there is no unique solution to this problem.</description>
+      <description>body {text-align: justify}Image Colorization Deep Learning - Convolutional Neural NetworkIntroductionImage colorization is the process of assigning colors to a grayscale image to make it more aesthetically appealing and perceptually meaningful. These are recognized as sophisticated tasks than often require prior knowledge of image content and manual adjustments to achieve artifact-free quality. Also, since objects can have different colors, there are many possible ways to assign colors to pixels in an image, which means there is no unique solution to this problem.</description>
     </item>
     
   </channel>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unsupervised Machine Learning on Algoritma Technical Blog</title>
+    <link>https://algotech.netlify.com/tags/unsupervised-machine-learning/</link>
+    <description>Recent content in Unsupervised Machine Learning on Algoritma Technical Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://algotech.netlify.com/tags/unsupervised-machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Local Outlier Factor with R</title>
+      <link>https://algotech.netlify.com/blog/local-outlier-factor-with-r/</link>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/blog/local-outlier-factor-with-r/</guid>
+      <description>body{text-align: justify}OverviewLocal Outlier Factor (LOF) is an unsupervised machine learning algorithm to detect outlier observations in a multivariate dataset.</description>
+    </item>
+    
+  </channel>
+</rss>

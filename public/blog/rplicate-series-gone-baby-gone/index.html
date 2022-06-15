@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -651,6 +651,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -668,42 +704,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -940,7 +940,7 @@ data_gdp <span style="color:#f92672">&lt;-</span> data_gdp <span style="color:#f
   <span style="color:#a6e22e">rename</span>(gdp <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;2017&#34;</span>)
 
 <span style="color:#a6e22e">head</span>(data_tfr,<span style="color:#ae81ff">10</span>)
-</code></pre></div><pre><code>#&gt; # A tibble: 10 x 2
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 10 x 2
 #&gt;    `Country Name`         tfr
 #&gt;    &lt;chr&gt;                &lt;dbl&gt;
 #&gt;  1 Aruba                 1.80
@@ -963,7 +963,7 @@ data_gdp <span style="color:#f92672">&lt;-</span> data_gdp <span style="color:#f
 
 <span style="color:#75715e"># quick check</span>
 <span style="color:#a6e22e">head</span>(df, <span style="color:#ae81ff">40</span>)
-</code></pre></div><pre><code>#&gt; # A tibble: 40 x 4
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 40 x 4
 #&gt;    country                      tfr        pop    gdp
 #&gt;    &lt;chr&gt;                      &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;
 #&gt;  1 World                       2.43 7510990456 10769.
@@ -980,7 +980,7 @@ data_gdp <span style="color:#f92672">&lt;-</span> data_gdp <span style="color:#f
 </code></pre><p>Look at the table above! Looks like we have some previously made clusters of countries in the data. To prevent redundancy, we need to remove them first.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">df <span style="color:#f92672">&lt;-</span> df <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">slice</span>(<span style="color:#f92672">-</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">18</span><span style="color:#f92672">:</span><span style="color:#ae81ff">43</span>))
 <span style="color:#a6e22e">head</span>(df,<span style="color:#ae81ff">10</span>)
-</code></pre></div><pre><code>#&gt; # A tibble: 10 x 4
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 10 x 4
 #&gt;    country              tfr        pop    gdp
 #&gt;    &lt;chr&gt;              &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;
 #&gt;  1 China               1.63 1386395000  8759.

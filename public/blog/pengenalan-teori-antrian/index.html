@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -645,6 +645,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -662,42 +698,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -1066,7 +1066,7 @@ if (!doNotTrack) {
 antrian <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;data_input/service.csv&#34;</span>)
 
 <span style="color:#a6e22e">head</span>(antrian)
-</code></pre></div><pre><code>#&gt;      arrival   service
+</code></pre></div><pre tabindex="0"><code>#&gt;      arrival   service
 #&gt; 1 0.81788639 1.3128388
 #&gt; 2 0.64056388 0.4183288
 #&gt; 3 0.09260608 0.2790050
@@ -1092,14 +1092,14 @@ fit2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fitdis
 
 <span style="color:#75715e"># goodness of fit test</span>
 <span style="color:#a6e22e">ks.test</span>(antrian<span style="color:#f92672">$</span>arrival, <span style="color:#e6db74">&#34;pexp&#34;</span>, fit<span style="color:#f92672">$</span>estimate)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; 	One-sample Kolmogorov-Smirnov test
 #&gt; 
 #&gt; data:  antrian$arrival
 #&gt; D = 0.072431, p-value = 0.6705
 #&gt; alternative hypothesis: two-sided
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ks.test</span>(antrian<span style="color:#f92672">$</span>service, <span style="color:#e6db74">&#34;pexp&#34;</span>, fit2<span style="color:#f92672">$</span>estimate)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; 	One-sample Kolmogorov-Smirnov test
 #&gt; 
 #&gt; data:  antrian$service
@@ -1119,7 +1119,7 @@ fit2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fitdis
   }
 }
 <span style="color:#a6e22e">steady_state</span>(antrian)
-</code></pre></div><pre><code>#&gt; [1] &quot;steady state&quot;
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] &quot;steady state&quot;
 </code></pre><h2 id="analisis-antrian">Analisis Antrian</h2>
 <p>Selanjutnya kita melakukan analisis antrian dengan melihat nilai faktor utilisasi dan ukuran kinerja pada antriannya. Kita akan mencoba menghitung ukuran kinerja sistem antrian dengan suatu package yaitu <code>queueing</code> dengan model antrian (M/M/1):(FCFS/$\infty$/$\infty$) dan (M/M/c):(FCFS/$\infty$/$\infty$).<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(queueing)
@@ -1141,12 +1141,12 @@ model_mmc <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">Q
 
 <span style="color:#75715e"># print model</span>
 <span style="color:#a6e22e">summary</span>(model_mm1)
-</code></pre></div><pre><code>#&gt;      lambda       mu c  k  m        RO        P0       Lq       Wq         X
+</code></pre></div><pre tabindex="0"><code>#&gt;      lambda       mu c  k  m        RO        P0       Lq       Wq         X
 #&gt; 1 0.8738726 1.039648 1 NA NA 0.8405462 0.1594538 4.430864 5.070377 0.8738726
 #&gt;         L        W      Wqq     Lqq
 #&gt; 1 5.27141 6.032241 6.032241 6.27141
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">summary</span>(model_mmc)
-</code></pre></div><pre><code>#&gt;      lambda       mu  c  k  m        RO        P0           Lq           Wq
+</code></pre></div><pre tabindex="0"><code>#&gt;      lambda       mu  c  k  m        RO        P0           Lq           Wq
 #&gt; 1 0.8738726 1.039648 13 NA NA 0.0646574 0.4314748 5.353684e-13 6.126389e-13
 #&gt;           X         L         W        Wqq      Lqq
 #&gt; 1 0.8738726 0.8405462 0.9618636 0.07910417 1.069127
@@ -1155,7 +1155,7 @@ model_mmc <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">Q
 que <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">queue_step</span>(arrivals <span style="color:#f92672">=</span> antrian <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">pull</span>(arrival), 
                   service <span style="color:#f92672">=</span> antrian <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">pull</span>(service), servers <span style="color:#f92672">=</span> <span style="color:#ae81ff">13</span>)
 <span style="color:#a6e22e">summary</span>(que)[10]
-</code></pre></div><pre><code>#&gt; $utilization
+</code></pre></div><pre tabindex="0"><code>#&gt; $utilization
 #&gt; [1] 0.7601147
 </code></pre><h2 id="kesimpulan">Kesimpulan</h2>
 <p>Simpulan yang bisa kita peroleh dari analisis sistem antrian service sepeda motor yaitu:</p>

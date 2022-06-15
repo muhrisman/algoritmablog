@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -645,6 +645,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -662,42 +698,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -1014,7 +1014,7 @@ if (!doNotTrack) {
 <p>In this example we will use a case study of sentiment tweets about airlines in the US obtained from Kaggle.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;data_input/tweets_airline.csv&#34;</span>)
 <span style="color:#a6e22e">glimpse</span>(data)
-</code></pre></div><pre><code>## Observations: 14,640
+</code></pre></div><pre tabindex="0"><code>## Observations: 14,640
 ## Variables: 15
 ## $ tweet_id                     &lt;dbl&gt; 5.703061e+17, 5.703011e+17, 5.703...
 ## $ airline_sentiment            &lt;chr&gt; &quot;neutral&quot;, &quot;positive&quot;, &quot;neutral&quot;,...
@@ -1039,65 +1039,65 @@ if (!doNotTrack) {
   <span style="color:#a6e22e">rx_alnum</span>() <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">rx_one_or_more</span>()
 mention
-</code></pre></div><pre><code>## [1] &quot;(@)[A-z0-9]+&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;(@)[A-z0-9]+&quot;
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#e6db74">&#34;@VirginAmerica What @dhepburn said.&#34;</span> <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">str_remove_all</span>(pattern <span style="color:#f92672">=</span> mention) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">str_squish</span>()
-</code></pre></div><pre><code>## [1] &quot;What said.&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;What said.&quot;
 </code></pre><h4 id="hashtag">hashtag</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">hashtag <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rx</span>() <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">rx_find</span>(value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">rx_alnum</span>() <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">rx_one_or_more</span>()
 hashtag
-</code></pre></div><pre><code>## [1] &quot;(#)[A-z0-9]+&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;(#)[A-z0-9]+&quot;
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#e6db74">&#34;@VirginAmerica I&#39;m #elevategold for a good reason: you rock!!&#34;</span> <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">str_remove_all</span>(pattern <span style="color:#f92672">=</span> mention) <span style="color:#f92672">%&gt;%</span>
   <span style="color:#a6e22e">str_remove_all</span>(pattern <span style="color:#f92672">=</span> hashtag) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">str_squish</span>()
-</code></pre></div><pre><code>## [1] &quot;I'm for a good reason: you rock!!&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;I'm for a good reason: you rock!!&quot;
 </code></pre><h4 id="question-mark">question mark</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">question <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rx</span>() <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">rx_find</span>(value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;?&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">rx_one_or_more</span>()
 question
-</code></pre></div><pre><code>## [1] &quot;(\\?)+&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;(\\?)+&quot;
 </code></pre><h4 id="exclamation-mark">exclamation mark</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">exclamation <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rx</span>() <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">rx_find</span>(value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;!&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">rx_one_or_more</span>()
 exclamation
-</code></pre></div><pre><code>## [1] &quot;(!)+&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;(!)+&quot;
 </code></pre><h4 id="punctuation">punctuation</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">punctuation <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rx_punctuation</span>()
 punctuation
-</code></pre></div><pre><code>## [1] &quot;[[:punct:]]&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;[[:punct:]]&quot;
 </code></pre><h4 id="number">number</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">number <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rx_digit</span>()
 number
-</code></pre></div><pre><code>## [1] &quot;\\d&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;\\d&quot;
 </code></pre><h4 id="dollar-sign">dollar sign</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">dollar <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rx</span>() <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">rx_find</span>(<span style="color:#e6db74">&#34;$&#34;</span>)
 dollar
-</code></pre></div><pre><code>## [1] &quot;(\\$)&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;(\\$)&quot;
 </code></pre><h3 class="tabset" id="text-cleansing">Text Cleansing</h3>
 <h4 id="replace_url"><code>replace_url</code></h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#e6db74">&#34;@VirginAmerica Really missed a prime opportunity, there. https://t.co/mWpG7grEZP&#34;</span> <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">replace_url</span>()
-</code></pre></div><pre><code>## [1] &quot;@VirginAmerica Really missed a prime opportunity, there. &quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;@VirginAmerica Really missed a prime opportunity, there. &quot;
 </code></pre><h4 id="replace_emoticon"><code>replace_emoticon</code></h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#e6db74">&#34;@SouthwestAir thanks! Very excited to see it :3&#34;</span> <span style="color:#f92672">%&gt;%</span>
   <span style="color:#a6e22e">replace_emoticon</span>()
-</code></pre></div><pre><code>## [1] &quot;@SouthwestAir thanks! Very excited to see it smiley &quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;@SouthwestAir thanks! Very excited to see it smiley &quot;
 </code></pre><h4 id="replace_contruction"><code>replace_contruction</code></h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#e6db74">&#34;@united I&#39;d thank you - but you didn&#39;t help. taking 6 hours to reply isn&#39;t actually helpful&#34;</span> <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">replace_contraction</span>()
-</code></pre></div><pre><code>## [1] &quot;@united I would thank you - but you did not help. taking 6 hours to reply is not actually helpful&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;@united I would thank you - but you did not help. taking 6 hours to reply is not actually helpful&quot;
 </code></pre><h4 id="replace_word_elongation"><code>replace_word_elongation</code></h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#e6db74">&#34;@VirginAmerica heyyyy guyyyys.. :/&#34;</span> <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">replace_word_elongation</span>()
-</code></pre></div><pre><code>## [1] &quot;@VirginAmerica hey guys.. :/&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;@VirginAmerica hey guys.. :/&quot;
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">data <span style="color:#f92672">&lt;-</span> data <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">mutate</span>(
     text_clean <span style="color:#f92672">=</span> text <span style="color:#f92672">%&gt;%</span> 
@@ -1120,7 +1120,7 @@ dollar
 </code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">data <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">select</span>(text, text_clean) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">sample_n</span>(<span style="color:#ae81ff">20</span>)
-</code></pre></div><pre><code>## # A tibble: 20 x 2
+</code></pre></div><pre tabindex="0"><code>## # A tibble: 20 x 2
 ##    text                                text_clean                          
 ##    &lt;chr&gt;                               &lt;chr&gt;                               
 ##  1 @united How can I file a claim whe~ how can i file a claim when your ag~
@@ -1151,7 +1151,7 @@ dollar
   <span style="color:#a6e22e">select</span>(text_clean, label) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">na.omit</span>()
 <span style="color:#a6e22e">head</span>(data, <span style="color:#ae81ff">10</span>)
-</code></pre></div><pre><code>## # A tibble: 10 x 2
+</code></pre></div><pre tabindex="0"><code>## # A tibble: 10 x 2
 ##    text_clean                                                         label
 ##    &lt;chr&gt;                                                              &lt;dbl&gt;
 ##  1 what said                                                              1
@@ -1173,7 +1173,7 @@ tokenizer <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">t
                             lower <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">fit_text_tokenizer</span>(data<span style="color:#f92672">$</span>text_clean)
 </code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;number of unique words:&#34;</span>, <span style="color:#a6e22e">length</span>(tokenizer<span style="color:#f92672">$</span>word_counts))
-</code></pre></div><pre><code>## [1] &quot;number of unique words: 13291&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;number of unique words: 13291&quot;
 </code></pre><h3 id="intuition">Intuition</h3>
 <p>Suppose we have 5 pieces of text documents that are stored in the docs object. Then we made a token with a maximum of words / terms used, which is 4. It means that words that rarely appear will not be used during the train model. To see the number of unique words stored in the document dictionary, use the command <code>token$word_counts</code>. To see the list of words with the highest frequency of appearances, use the <code>token$word_index</code> command.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">docs <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#39;Well done!&#39;</span>,
@@ -1185,9 +1185,9 @@ tokendocs <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">t
                             lower <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">fit_text_tokenizer</span>(docs)
 </code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;number of unique words&#34;</span>,<span style="color:#a6e22e">length</span>(tokendocs<span style="color:#f92672">$</span>word_counts))
-</code></pre></div><pre><code>## [1] &quot;number of unique words 8&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;number of unique words 8&quot;
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">tokendocs<span style="color:#f92672">$</span>word_index[1<span style="color:#f92672">:</span><span style="color:#ae81ff">4</span>]
-</code></pre></div><pre><code>## $work
+</code></pre></div><pre tabindex="0"><code>## $work
 ## [1] 1
 ## 
 ## $well
@@ -1215,7 +1215,7 @@ data_val <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">tr
 data_test <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">testing</span>(inval)
 </code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">maxlen <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">max</span>(<span style="color:#a6e22e">str_count</span>(data<span style="color:#f92672">$</span>text_clean, <span style="color:#e6db74">&#34;\\w+&#34;</span>)) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> 
 <span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;maxiumum length words in data:&#34;</span>, maxlen)
-</code></pre></div><pre><code>## [1] &quot;maxiumum length words in data: 90&quot;
+</code></pre></div><pre tabindex="0"><code>## [1] &quot;maxiumum length words in data: 90&quot;
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># prepare x</span>
 data_train_x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">texts_to_sequences</span>(tokenizer, data_train<span style="color:#f92672">$</span>text_clean) <span style="color:#f92672">%&gt;%</span>
   <span style="color:#a6e22e">pad_sequences</span>(maxlen <span style="color:#f92672">=</span> maxlen)
@@ -1236,13 +1236,13 @@ data_test_y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e"
                                 <span style="color:#e6db74">&#34;Good job bro, keep hard work&#34;</span>, 
                                 <span style="color:#e6db74">&#34;well done&#34;</span>)) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">pad_sequences</span>(maxlen <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>)
-</code></pre></div><pre><code>##      [,1] [,2] [,3] [,4] [,5]
+</code></pre></div><pre tabindex="0"><code>##      [,1] [,2] [,3] [,4] [,5]
 ## [1,]    0    0    0    0    0
 ## [2,]    0    0    0    0    1
 ## [3,]    0    0    0    2    3
 </code></pre><p>The result of <code>text_to_sequences</code> is a matrix of size <code>\(n ∗ maxlen\)</code>. The example above consists of 3 text documents and is set to maxlen = 5. it will produce a <code>\(3 \times 5\)</code> matrix which each index is a representative integer of the same words as <code>tokendocs</code> in the i-th list. Recall, the word <code>done</code> is on the 3rd list on our token, right? therefore the matrix result above in the third document and the last integer sequence is 3. Why does it appear in the last index? because in <code>pad_sequences</code> we don&rsquo;t set parameters of the padding type whether &ldquo;pre&rdquo; or &ldquo;post&rdquo; and by default is &ldquo;pre&rdquo;.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">tokendocs<span style="color:#f92672">$</span>word_index[3]
-</code></pre></div><pre><code>## $done
+</code></pre></div><pre tabindex="0"><code>## $done
 ## [1] 3
 </code></pre><h2 id="architecture">Architecture</h2>
 <h3 id="embedding-layer">Embedding Layer</h3>
@@ -1320,7 +1320,7 @@ model <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">comp
 
 <span style="color:#75715e"># model summary</span>
 <span style="color:#a6e22e">summary</span>(model)
-</code></pre></div><pre><code>## ___________________________________________________________________________
+</code></pre></div><pre tabindex="0"><code>## ___________________________________________________________________________
 ## Layer (type)                     Output Shape                  Param #     
 ## ===========================================================================
 ## input (Embedding)                (None, 90, 32)                32768       
@@ -1374,13 +1374,13 @@ data_test_pred <span style="color:#f92672">&lt;-</span> model <span style="color
  truth <span style="color:#f92672">=</span> <span style="color:#a6e22e">factor</span>(data_train<span style="color:#f92672">$</span>label,labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;negative&#34;</span>, <span style="color:#e6db74">&#34;neutral&#34;</span>, <span style="color:#e6db74">&#34;positive&#34;</span>)),
  estimate <span style="color:#f92672">=</span> <span style="color:#a6e22e">factor</span>(data_train_pred, labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;negative&#34;</span>, <span style="color:#e6db74">&#34;neutral&#34;</span>, <span style="color:#e6db74">&#34;positive&#34;</span>))
 )
-</code></pre></div><pre><code>## [1] 0.8056534
+</code></pre></div><pre tabindex="0"><code>## [1] 0.8056534
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># accuracy on data test</span>
 <span style="color:#a6e22e">accuracy_vec</span>(
  truth <span style="color:#f92672">=</span> <span style="color:#a6e22e">factor</span>(data_test<span style="color:#f92672">$</span>label,labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;negative&#34;</span>, <span style="color:#e6db74">&#34;neutral&#34;</span>, <span style="color:#e6db74">&#34;positive&#34;</span>)),
  estimate <span style="color:#f92672">=</span> <span style="color:#a6e22e">factor</span>(data_test_pred, labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;negative&#34;</span>, <span style="color:#e6db74">&#34;neutral&#34;</span>, <span style="color:#e6db74">&#34;positive&#34;</span>))
 )
-</code></pre></div><pre><code>## [1] 0.7895461
+</code></pre></div><pre tabindex="0"><code>## [1] 0.7895461
 </code></pre>
   </div>
 

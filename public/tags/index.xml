@@ -6,7 +6,88 @@
     <description>Recent content in Tags on Algoritma Technical Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://algotech.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://algotech.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leaflet</title>
+      <link>https://algotech.netlify.com/tags/leaflet/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/tags/leaflet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://algotech.netlify.com/tags/machine-learning/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Map</title>
+      <link>https://algotech.netlify.com/tags/map/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/tags/map/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mapshaper</title>
+      <link>https://algotech.netlify.com/tags/mapshaper/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/tags/mapshaper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>regression</title>
+      <link>https://algotech.netlify.com/tags/regression/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatial Analysis</title>
+      <link>https://algotech.netlify.com/tags/spatial-analysis/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/tags/spatial-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anomaly Detection</title>
+      <link>https://algotech.netlify.com/tags/anomaly-detection/</link>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/tags/anomaly-detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Outlier Detection</title>
+      <link>https://algotech.netlify.com/tags/outlier-detection/</link>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/tags/outlier-detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unsupervised Machine Learning</title>
+      <link>https://algotech.netlify.com/tags/unsupervised-machine-learning/</link>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/tags/unsupervised-machine-learning/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ARIMAX</title>
       <link>https://algotech.netlify.com/tags/arimax/</link>
@@ -112,15 +193,6 @@
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/tags/gridsearchcv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>https://algotech.netlify.com/tags/machine-learning/</link>
-      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://algotech.netlify.com/tags/machine-learning/</guid>
       <description></description>
     </item>
     
@@ -530,15 +602,6 @@
     </item>
     
     <item>
-      <title>regression</title>
-      <link>https://algotech.netlify.com/tags/regression/</link>
-      <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://algotech.netlify.com/tags/regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Regularization</title>
       <link>https://algotech.netlify.com/tags/regularization/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
@@ -598,33 +661,6 @@
       <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/tags/geocoding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Leaflet</title>
-      <link>https://algotech.netlify.com/tags/leaflet/</link>
-      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://algotech.netlify.com/tags/leaflet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Map</title>
-      <link>https://algotech.netlify.com/tags/map/</link>
-      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://algotech.netlify.com/tags/map/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mapshaper</title>
-      <link>https://algotech.netlify.com/tags/mapshaper/</link>
-      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://algotech.netlify.com/tags/mapshaper/</guid>
       <description></description>
     </item>
     

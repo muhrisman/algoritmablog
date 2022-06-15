@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -645,6 +645,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -662,42 +698,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -1001,7 +1001,7 @@ if (!doNotTrack) {
 <h2 id="dataset">Dataset</h2>
 <p>Pertama, kita load terlebih dahulu data yang akan digunakan.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">head</span>(USArrests)
-</code></pre></div><pre><code>#&gt;            Murder Assault UrbanPop Rape
+</code></pre></div><pre tabindex="0"><code>#&gt;            Murder Assault UrbanPop Rape
 #&gt; Alabama      13.2     236       58 21.2
 #&gt; Alaska       10.0     263       48 44.5
 #&gt; Arizona       8.1     294       80 31.0
@@ -1013,11 +1013,11 @@ if (!doNotTrack) {
 <p>Selanjutnya kita dapat cek apakah terdapat <strong>missing value</strong> pada data. Dari hasil di bawah, kita mengetahui bahwa tidak ada missing value pada data dan data dapat dianalisis lebih lanjut.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># cek missing value</span>
 <span style="color:#a6e22e">anyNA</span>(USArrests)
-</code></pre></div><pre><code>#&gt; [1] FALSE
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] FALSE
 </code></pre><p>Selanjutnya, kita dapat melakukan perhitungan (dis)similarity data. Namun, perhitungan (dis)similarity / jarak amat sensitif terhadap perbedaan skala antar variable data. Oleh karena itu, kita perlu melakukan standarisasi data terlebih dahulu agar skala pada tiap variable serupa. Pada data <code>USArrest</code> setiap variabel belum memiliki skala yang sama sehingga perlu dilakukan standarisasi.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># cek skala tiap variable data</span>
 <span style="color:#a6e22e">summary</span>(USArrests)
-</code></pre></div><pre><code>#&gt;      Murder          Assault         UrbanPop          Rape      
+</code></pre></div><pre tabindex="0"><code>#&gt;      Murder          Assault         UrbanPop          Rape      
 #&gt;  Min.   : 0.800   Min.   : 45.0   Min.   :32.00   Min.   : 7.30  
 #&gt;  1st Qu.: 4.075   1st Qu.:109.0   1st Qu.:54.50   1st Qu.:15.07  
 #&gt;  Median : 7.250   Median :159.0   Median :66.00   Median :20.10  
@@ -1036,7 +1036,7 @@ if (!doNotTrack) {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># z-score standardization</span>
 us_z <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">scale</span>(USArrests) 
 <span style="color:#a6e22e">head</span>(us_z)
-</code></pre></div><pre><code>#&gt;                Murder   Assault   UrbanPop         Rape
+</code></pre></div><pre tabindex="0"><code>#&gt;                Murder   Assault   UrbanPop         Rape
 #&gt; Alabama    1.24256408 0.7828393 -0.5209066 -0.003416473
 #&gt; Alaska     0.50786248 1.1068225 -1.2117642  2.484202941
 #&gt; Arizona    0.07163341 1.4788032  0.9989801  1.042878388
@@ -1048,7 +1048,7 @@ us_z <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">scale<
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># menghitung distance</span>
 us_dist <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dist</span>(x <span style="color:#f92672">=</span> us_z, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;euclidean&#34;</span>)
 </code></pre></div><p>Fungsi <code>dist()</code> secara otomatis menghitung (dis)similarity antar observasi data. Objek hasil <code>dist()</code> tersebut nantinya dapat langsung dimasukkan kedalam fungsi clustering dan otomatis diolah sebagai <strong>distance matrix</strong>, namun berikut kurang lebih tampilannya dalam bentuk distance matrix.</p>
-<pre><code>#&gt;             Alabama   Alaska  Arizona Arkansas California
+<pre tabindex="0"><code>#&gt;             Alabama   Alaska  Arizona Arkansas California
 #&gt; Alabama    0.000000 2.703754 2.293520 1.289810   3.263110
 #&gt; Alaska     2.703754 0.000000 2.700643 2.826039   3.012541
 #&gt; Arizona    2.293520 2.700643 0.000000 2.717758   1.310484
@@ -1104,11 +1104,11 @@ us_hc_centroid <span style="color:#f92672">&lt;-</span> <span style="color:#a6e2
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># cutree untuk menghasilkan cluster data</span>
 complete_clust <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cutree</span>(us_hc_complete,  k <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
 <span style="color:#a6e22e">head</span>(complete_clust)
-</code></pre></div><pre><code>#&gt;    Alabama     Alaska    Arizona   Arkansas California   Colorado 
+</code></pre></div><pre tabindex="0"><code>#&gt;    Alabama     Alaska    Arizona   Arkansas California   Colorado 
 #&gt;          1          1          2          3          2          2
 </code></pre><p>Berikut ini banyak anggota dari masing-masing cluster yang terbentuk.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">table</span>(complete_clust)
-</code></pre></div><pre><code>#&gt; complete_clust
+</code></pre></div><pre tabindex="0"><code>#&gt; complete_clust
 #&gt;  1  2  3  4 
 #&gt;  8 11 21 10
 </code></pre><p>Anggota pada masing-masing cluster cukup merata dengan cluster yang paling banyak memiliki anggota adalah cluster 3. Berikut hasil akhir cluster yang terbentuk apabila dilihat dari dendrogram.</p>
@@ -1126,7 +1126,7 @@ complete_clust <span style="color:#f92672">&lt;-</span> <span style="color:#a6e2
 <p>Untuk melihat korelasinya, maka kita perlu menghitung cophenetic distance terlebih dahulu menggunakan fungsi <code>cophenetic()</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">complete_coph <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cophenetic</span>(us_hc_complete)
 <span style="color:#a6e22e">cor</span>(complete_coph, us_dist)
-</code></pre></div><pre><code>#&gt; [1] 0.6979437
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 0.6979437
 </code></pre><h3 id="dendrogram-single-linkage">Dendrogram Single Linkage</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">fviz_dend</span>(us_hc_single, cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>, 
           main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Cluster Dendrogram Single Linkage&#34;</span>)
@@ -1135,11 +1135,11 @@ complete_clust <span style="color:#f92672">&lt;-</span> <span style="color:#a6e2
 <p>Sangat sulit untuk menentukan banyak cluster yang akan terbentuk apabila setiap observasi sangat rapat. Apabila dicoba untuk membentuk 4 cluster, maka berikut ini hasil cluster yang terbentuk.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">single_clust <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cutree</span>(us_hc_single, k <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
 <span style="color:#a6e22e">head</span>(single_clust)
-</code></pre></div><pre><code>#&gt;    Alabama     Alaska    Arizona   Arkansas California   Colorado 
+</code></pre></div><pre tabindex="0"><code>#&gt;    Alabama     Alaska    Arizona   Arkansas California   Colorado 
 #&gt;          1          2          1          1          3          1
 </code></pre><p>Banyak anggota pada masing-masing cluster adalah sebagai berikut.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">table</span>(single_clust)
-</code></pre></div><pre><code>#&gt; single_clust
+</code></pre></div><pre tabindex="0"><code>#&gt; single_clust
 #&gt;  1  2  3  4 
 #&gt; 46  1  2  1
 </code></pre><p>Anggota pada cluster yang terbentuk sangat berbeda secara signifikan. Cluster 1 memiliki anggota yang paling banyak hampir sebanyak total observasi pada data. Hal ini yang dikarenakan terlalu rapatnya antar observasi sehingga sulit dipisahkan perbedaannya.</p>
@@ -1156,18 +1156,18 @@ complete_clust <span style="color:#f92672">&lt;-</span> <span style="color:#a6e2
 <p>Apabila kita cek validasi dari cluster tree yang terbentuk, korelasi yang diperoleh rendah, artinya cluster yang terbentuk kurang merepresentasikan kondisi data yang ada. Sehingga menggunakan single linkage untuk data <code>USArrest</code> kurang relevan.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">single_coph <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cophenetic</span>(us_hc_single)
 <span style="color:#a6e22e">cor</span>(single_coph, us_dist)
-</code></pre></div><pre><code>#&gt; [1] 0.541272
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 0.541272
 </code></pre><h3 id="dendrogram-average-linkage">Dendrogram Average Linkage</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">fviz_dend</span>(us_hc_avg, cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Cluster Dendrogram Average Linkage&#34;</span>)
 </code></pre></div><p><!-- raw HTML omitted --></p>
 <p>Hasil dendrogram yang terbentuk pada model average linkage terlihat hampir mirip seperti complete linkage, yaitu terlihat compact. Model average linkage biasa digunakan karena menghasilkan nilai validasi cluster tree yang lebih baik dibandingkan metode linkage yang lain.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">avg_coph <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cophenetic</span>(us_hc_avg)
 <span style="color:#a6e22e">cor</span>(avg_coph, us_dist)
-</code></pre></div><pre><code>#&gt; [1] 0.7180382
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 0.7180382
 </code></pre><p>Apabila dendrogramnya dipotong untuk membentuk 4 cluster, berikut hasil yang diperoleh.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">avg_clust <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cutree</span>(us_hc_avg, k <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
 <span style="color:#a6e22e">table</span>(avg_clust)
-</code></pre></div><pre><code>#&gt; avg_clust
+</code></pre></div><pre tabindex="0"><code>#&gt; avg_clust
 #&gt;  1  2  3  4 
 #&gt;  7  1 12 30
 </code></pre><p>Anggota cluster paling banyak diperoleh pada cluster 4 sebanyak 30 cluster. Namun terdapat cluster yang hanya memiliki 1 anggota saja yaitu pada cluster 2. Hal ini dapat dijadikan indikasi bahwa observasi pada cluster 2 yaitu &ldquo;Alaska&rdquo; merupakan anomali data.</p>
@@ -1189,11 +1189,11 @@ complete_clust <span style="color:#f92672">&lt;-</span> <span style="color:#a6e2
 <p>Meskipun begitu, apabila dilihat dari nilai korelasi distancenya menunjukkan nilai yang sedikit cukup merepresentasikan data yang ada.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">centroid_coph <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cophenetic</span>(us_hc_centroid)
 <span style="color:#a6e22e">cor</span>(centroid_coph, us_dist)
-</code></pre></div><pre><code>#&gt; [1] 0.6074717
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 0.6074717
 </code></pre><p>Berikut ini anggota cluster pada 4 cluster yang terbentuk.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">centroid_clust <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cutree</span>(us_hc_centroid, k <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
 <span style="color:#a6e22e">table</span>(centroid_clust)
-</code></pre></div><pre><code>#&gt; centroid_clust
+</code></pre></div><pre tabindex="0"><code>#&gt; centroid_clust
 #&gt;  1  2  3  4 
 #&gt; 47  1  1  1
 </code></pre><p>Anggota cluster didominasi pada cluster 1 sebanyak 47 observasi, namun untuk cluster yang lain hanya memiliki 1 observasi saja. Berikut visualiasi cluster yang terbentuk untuk masing-masing dendrogramnya.</p>
@@ -1216,11 +1216,11 @@ complete_clust <span style="color:#f92672">&lt;-</span> <span style="color:#a6e2
 <p>Berdasarkan nilai korelasi distance untuk metode ward&rsquo;s, diperoleh 0.69, yang mana dari segi nilai tidak terlalu besar, namun untuk melakukan partisi model cukup mudah.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">ward_coph <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cophenetic</span>(us_hc_ward)
 <span style="color:#a6e22e">cor</span>(ward_coph, us_dist)
-</code></pre></div><pre><code>#&gt; [1] 0.6975266
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 0.6975266
 </code></pre><p>Berikut ini anggota cluster pada 4 cluster yang terbentuk.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">ward_clust <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cutree</span>(us_hc_ward, k <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
 <span style="color:#a6e22e">table</span>(ward_clust)
-</code></pre></div><pre><code>#&gt; ward_clust
+</code></pre></div><pre tabindex="0"><code>#&gt; ward_clust
 #&gt;  1  2  3  4 
 #&gt;  7 12 19 12
 </code></pre><p>Anggota cluster yang diperoleh pada model ward&rsquo;s cukup mirip seperti model complete linkage. Anggota cluster yang paling sedikit yaitu pada cluster 1.</p>
@@ -1242,7 +1242,7 @@ complete_clust <span style="color:#f92672">&lt;-</span> <span style="color:#a6e2
           centroid <span style="color:#f92672">=</span> <span style="color:#a6e22e">cor</span>(centroid_coph, us_dist),
           ward <span style="color:#f92672">=</span> <span style="color:#a6e22e">cor</span>(ward_coph, us_dist)) <span style="color:#f92672">%&gt;%</span> 
   tidyr<span style="color:#f92672">::</span><span style="color:#a6e22e">pivot_longer</span>(cols <span style="color:#f92672">=</span> <span style="color:#a6e22e">colnames</span>(.),names_to <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;method&#34;</span>, values_to <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;correlation&#34;</span>)
-</code></pre></div><pre><code>#&gt; # A tibble: 5 x 2
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 5 x 2
 #&gt;   method   correlation
 #&gt;   &lt;chr&gt;          &lt;dbl&gt;
 #&gt; 1 complete       0.698
@@ -1289,7 +1289,7 @@ internal <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cl
                     metric <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;euclidean&#34;</span>,
                     method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;complete&#34;</span>)
 <span style="color:#a6e22e">summary</span>(internal)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; Clustering Methods:
 #&gt;  agnes 
 #&gt; 
@@ -1317,7 +1317,7 @@ stability <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c
                      method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;complete&#34;</span>)
 <span style="color:#75715e"># hanya menampilkan skor optimal</span>
 <span style="color:#a6e22e">optimalScores</span>(stability)
-</code></pre></div><pre><code>#&gt;         Score Method Clusters
+</code></pre></div><pre tabindex="0"><code>#&gt;         Score Method Clusters
 #&gt; APN 0.2311732  agnes        4
 #&gt; AD  1.6246247  agnes        4
 #&gt; ADM 0.5947000  agnes        4

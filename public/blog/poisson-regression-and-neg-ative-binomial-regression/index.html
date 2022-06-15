@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -651,6 +651,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -668,42 +704,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -914,12 +914,12 @@ if (!doNotTrack) {
 <p>Let&rsquo;s see the extreme example below !</p>
 <p>Suppose I have data of 20 different visitors who have shopped at store A. Then I want to predict how many times visitors arrive based on the amount of money spent on shopping at store A?</p>
 <p>Target variable    (y) : Count of times a visitor arrived</p>
-<p>Predictor Variable (x) :
+<p>Predictor Variable (x) : 
 Total costs (Rupiah-Indonesian) incurred for shopping at the store A</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">storeA <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(visitor<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>),
                     cost<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">52034</span>, <span style="color:#ae81ff">83432</span>, <span style="color:#ae81ff">80241</span>, <span style="color:#ae81ff">52949</span>, <span style="color:#ae81ff">55876</span>, <span style="color:#ae81ff">70292</span>, <span style="color:#ae81ff">30077</span>, <span style="color:#ae81ff">69195</span>, <span style="color:#ae81ff">60991</span>, <span style="color:#ae81ff">46161</span>, <span style="color:#ae81ff">57759</span>, <span style="color:#ae81ff">30648</span>,<span style="color:#ae81ff">77724</span> , <span style="color:#ae81ff">73404</span>, <span style="color:#ae81ff">36850</span>, <span style="color:#ae81ff">42691</span>, <span style="color:#ae81ff">64087</span>, <span style="color:#ae81ff">84858</span>, <span style="color:#ae81ff">70533</span>, <span style="color:#ae81ff">62188</span>))
 <span style="color:#a6e22e">head</span>(storeA)
-</code></pre></div><pre><code>#&gt;   visitor  cost
+</code></pre></div><pre tabindex="0"><code>#&gt;   visitor  cost
 #&gt; 1       2 52034
 #&gt; 2       1 83432
 #&gt; 3       1 80241
@@ -929,7 +929,7 @@ Total costs (Rupiah-Indonesian) incurred for shopping at the store A</p>
 </code></pre><p>I am trying to build a linear regression model using the <code>lm</code> function in R.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">modelols1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(visitor<span style="color:#f92672">~</span>cost, storeA)
 <span style="color:#a6e22e">summary</span>(modelols1)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; Call:
 #&gt; lm(formula = visitor ~ cost, data = storeA)
 #&gt; 
@@ -955,9 +955,9 @@ Total costs (Rupiah-Indonesian) incurred for shopping at the store A</p>
 <p><code>$$visitor = 1.817059368-{0.000004444}\times{cost}$$</code></p>
 <p>If Ani shopping in shop A with the amount of Rp. 422,000 : then how many times did Ani&rsquo;s prediction come?</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">predict</span>(modelols1, <span style="color:#a6e22e">data.frame</span>(cost<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">422000</span>)))
-</code></pre></div><pre><code>#&gt;           1 
+</code></pre></div><pre tabindex="0"><code>#&gt;           1 
 #&gt; -0.05814847
-</code></pre><p>Based on the prediction results above, Ani came to shop A is -0.6 times.
+</code></pre><p>Based on the prediction results above, Ani came to shop A is -0.6 times. 
 Does it make sense ?</p>
 <h1 id="poisson-regression">Poisson Regression</h1>
 <p>In statistics, Poisson regression is a generalized linear model form of regression analysis used to model count data and contingency tables. Poisson regression assumes the response variable Y has a Poisson distribution, and assumes the logarithm of its expected value can be modeled by a linear combination of unknown parameters. A Poisson regression model is sometimes known as a log-linear model, especially when used to model contingency tables.</p>
@@ -1082,11 +1082,11 @@ Does it make sense ?</p>
 <p><code>\(\hat{y} = ln(y)\)</code> can be taken to develop a regression model (i.e. Poisson Regression)</p>
 </li>
 <li>
-<p>MLE (Maximum Likelihood Estimation) is used to estimate the parameters of regression equation
+<p>MLE (Maximum Likelihood Estimation) is used to estimate the parameters of regression equation 
 understand :</p>
 <ul>
 <li>
-<p>if <code>\(b=0\)</code>, then <code>\(\hat{y} =a\)</code> i.e. ln(y)=a, hence <strong>expected/predicted
+<p>if <code>\(b=0\)</code>, then <code>\(\hat{y} =a\)</code> i.e. ln(y)=a, hence <strong>expected/predicted 
 <code>\(\hat{y} = exp(a)\)</code></strong></p>
 </li>
 <li>
@@ -1129,14 +1129,14 @@ understand :</p>
 <p>The first step taken is reading the data. Use the <code>read.dta</code> function from the<code> foreign</code> library. The data used comes from the link &ldquo;<a href="https://stats.idre.ucla.edu/stat/stata/dae/nb_data.dta%22">https://stats.idre.ucla.edu/stat/stata/dae/nb_data.dta&quot;</a></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">dat <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.dta</span>(<span style="color:#e6db74">&#34;https://stats.idre.ucla.edu/stat/stata/dae/nb_data.dta&#34;</span>)
 <span style="color:#a6e22e">head</span>(dat)
-</code></pre></div><pre><code>#&gt;     id gender math daysabs prog
+</code></pre></div><pre tabindex="0"><code>#&gt;     id gender math daysabs prog
 #&gt; 1 1001   male   63       4    2
 #&gt; 2 1002   male   27       4    2
 #&gt; 3 1003 female   20       2    2
 #&gt; 4 1004 female   16       3    2
 #&gt; 5 1005 female    2       3    2
 #&gt; 6 1006 female   71      13    2
-</code></pre><p>daysabs : The number of days of absence (Discreate - Positive)
+</code></pre><p>daysabs : The number of days of absence (Discreate - Positive) 
 The value of the daysabs variable cannot be negative. The dayabs variable is positive integer value</p>
 <p>math : Math score (kontinu)</p>
 <p>program (prog): Student program (Categorical)</p>
@@ -1155,7 +1155,7 @@ The value of the daysabs variable cannot be negative. The dayabs variable is pos
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">dat <span style="color:#f92672">&lt;-</span> dat[,<span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">5</span>)]
 dat<span style="color:#f92672">$</span>prog <span style="color:#f92672">&lt;-</span>  <span style="color:#a6e22e">factor</span>(dat<span style="color:#f92672">$</span>prog, levels <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>, labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;General&#34;</span>, <span style="color:#e6db74">&#34;Academic&#34;</span>, <span style="color:#e6db74">&#34;Vocational&#34;</span>))
 <span style="color:#a6e22e">summary</span>(dat<span style="color:#f92672">$</span>daysabs)
-</code></pre></div><pre><code>#&gt;    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+</code></pre></div><pre tabindex="0"><code>#&gt;    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 #&gt;   0.000   1.000   4.000   5.955   8.000  35.000
 </code></pre><h2 id="distribution-of-days-absent-in-each-program">Distribution of days absent in each program.</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(dat, <span style="color:#a6e22e">aes</span>(daysabs, fill <span style="color:#f92672">=</span> prog)) <span style="color:#f92672">+</span> <span style="color:#a6e22e">geom_histogram</span>(binwidth <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, breaks<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">90</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">facet_grid</span>(prog <span style="color:#f92672">~</span> 
@@ -1178,7 +1178,7 @@ In the plots above is a distribution of each program has 314 observations and th
 <p><strong>If I want to build a model to predict daysabs without any predictor variable using Poisson Regression</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm</span>(daysabs <span style="color:#f92672">~</span><span style="color:#ae81ff">1</span>, family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;poisson&#34;</span>, data <span style="color:#f92672">=</span> dat)
 <span style="color:#a6e22e">summary</span>(model1)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; Call:
 #&gt; glm(formula = daysabs ~ 1, family = &quot;poisson&quot;, data = dat)
 #&gt; 
@@ -1203,15 +1203,15 @@ In the plots above is a distribution of each program has 314 observations and th
 $$ \hat{y} = exp(a+bx) = {exp(a)}\times{exp(bx)}$$</p>
 <p>Our model1 : $$ \hat{y} = exp(a) = exp(1.784)$$</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">exp</span>(model1<span style="color:#f92672">$</span>coefficients[1])
-</code></pre></div><pre><code>#&gt; (Intercept) 
+</code></pre></div><pre tabindex="0"><code>#&gt; (Intercept) 
 #&gt;    5.955414
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">mean</span>(dat<span style="color:#f92672">$</span>daysabs)
-</code></pre></div><pre><code>#&gt; [1] 5.955414
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 5.955414
 </code></pre><p>From the result above, exp(intercept) is mean of the target variable (daysabs)</p>
 <p><strong>If I want to predict daysabs based on math scores and student programs with Poisson Regression</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">modelpois <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm</span>(daysabs <span style="color:#f92672">~</span> math <span style="color:#f92672">+</span> prog, family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;poisson&#34;</span>, data <span style="color:#f92672">=</span> dat)
 <span style="color:#a6e22e">summary</span>(modelpois)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; Call:
 #&gt; glm(formula = daysabs ~ math + prog, family = &quot;poisson&quot;, data = dat)
 #&gt; 
@@ -1245,7 +1245,7 @@ We get the Poisson model: $$ \hat{daysabs} = exp(2.651974-0.006808math-0.439897p
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(DHARMa)
 resp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">simulateResiduals</span>(modelpois, refit <span style="color:#f92672">=</span> T)
 <span style="color:#a6e22e">testDispersion</span>(resp, plot <span style="color:#f92672">=</span> F)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; 	DHARMa nonparametric dispersion test via mean deviance residual fitted
 #&gt; 	vs. simulated-refitted
 #&gt; 
@@ -1263,7 +1263,7 @@ Look at the Q-Q plot residuals. The plot above is a residual plot whether spread
 <p>Build a Binomial Negative Regression model in R using the <code>glm.nb</code> function from the library <code>car</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">modelnb1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm.nb</span>(daysabs <span style="color:#f92672">~</span> <span style="color:#ae81ff">1</span>, data <span style="color:#f92672">=</span> dat)
 <span style="color:#a6e22e">summary</span>(modelnb1)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; Call:
 #&gt; glm.nb(formula = daysabs ~ 1, data = dat, init.theta = 0.7999836134, 
 #&gt;     link = log)
@@ -1296,7 +1296,7 @@ Look at the Q-Q plot residuals. The plot above is a residual plot whether spread
 <p><strong>We want to predict daysabs based on math scores and student programs using Negative Binomial Regression</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">modelnb <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm.nb</span>(daysabs <span style="color:#f92672">~</span> math <span style="color:#f92672">+</span> prog, data <span style="color:#f92672">=</span> dat)
 <span style="color:#a6e22e">summary</span>(modelnb)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; Call:
 #&gt; glm.nb(formula = daysabs ~ math + prog, data = dat, init.theta = 1.032713156, 
 #&gt;     link = log)
@@ -1337,7 +1337,7 @@ resnb <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">simul
 </code></pre></div><p><!-- raw HTML omitted --></p>
 <p>In the Q-Q Plot Residuals above, it can be seen that the residual point has followed a diagonal line (almost perfect). Therefore the residuals are normally distributed.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">testDispersion</span>(resnb, plot<span style="color:#f92672">=</span>F)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; 	DHARMa nonparametric dispersion test via mean deviance residual fitted
 #&gt; 	vs. simulated-refitted
 #&gt; 
@@ -1350,9 +1350,9 @@ resnb <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">simul
 <li><em>Comparison of AIC values</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">modelpois<span style="color:#f92672">$</span>aic 
-</code></pre></div><pre><code>#&gt; [1] 2665.285
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 2665.285
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">modelnb<span style="color:#f92672">$</span>aic 
-</code></pre></div><pre><code>#&gt; [1] 1741.258
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 1741.258
 </code></pre><p>Compare the models, the Poisson Regression model and the Negative Binomial Regression model based on the AIC value. Then the Negative Binomial Regression model is the model with the smallest AIC value.</p>
 <ul>
 <li><em>Comparison Dispersion Parameters</em></li>
@@ -1370,13 +1370,13 @@ model that has a dispersion value close to 1.</p>
 <p>Negative Binomial model: $$ \hat{daysabs} = exp(2.615265   -0.005993math-0.440760progAcademic-1.278651progVocational)$$</p>
 <p><em>or</em> : $$ \hat{daysabs} = exp(2.615265)<em>exp(-0.005993</em>math)<em>exp(-0.440760</em>progAcademic)<em>exp(-1.278651</em>progVocational)$$</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">(estnb <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cbind</span>(Estimate <span style="color:#f92672">=</span> <span style="color:#a6e22e">coef</span>(modelnb)))
-</code></pre></div><pre><code>#&gt;                    Estimate
+</code></pre></div><pre tabindex="0"><code>#&gt;                    Estimate
 #&gt; (Intercept)     2.615265446
 #&gt; math           -0.005992988
 #&gt; progAcademic   -0.440760012
 #&gt; progVocational -1.278650721
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">exp</span>(estnb)
-</code></pre></div><pre><code>#&gt;                  Estimate
+</code></pre></div><pre tabindex="0"><code>#&gt;                  Estimate
 #&gt; (Intercept)    13.6708448
 #&gt; math            0.9940249
 #&gt; progAcademic    0.6435471
@@ -1399,15 +1399,15 @@ model that has a dispersion value close to 1.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">daysabs.Ani <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">exp</span>(<span style="color:#ae81ff">2.615265-0.005993</span><span style="color:#f92672">*</span><span style="color:#ae81ff">97</span>)
 daysabs.Budi <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">exp</span>(<span style="color:#ae81ff">2.615265-0.005993</span><span style="color:#f92672">*</span><span style="color:#ae81ff">96</span>)
 daysabs.Ani 
-</code></pre></div><pre><code>#&gt; [1] 7.644176
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 7.644176
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">daysabs.Budi
-</code></pre></div><pre><code>#&gt; [1] 7.690125
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 7.690125
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">daysabs.Ani2 <span style="color:#f92672">&lt;-</span> daysabs.Budi<span style="color:#f92672">*</span><span style="color:#ae81ff">0.9940249</span>
 
 daysabs.Ani 
-</code></pre></div><pre><code>#&gt; [1] 7.644176
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 7.644176
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">daysabs.Ani2
-</code></pre></div><pre><code>#&gt; [1] 7.644175
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 7.644175
 </code></pre><p>From the results above it is proven that : <strong>&ldquo;Every one-unit increase in the value of math, then daysabs(y) will decrease (-) by 0.9940249 times, provided that other predictor variables are constant&rdquo;</strong></p>
 <p>If I make a new data frame with 3 observations and have a different program.
 Look for the predicted daysabs value based on the new data.</p>
@@ -1415,29 +1415,29 @@ Look for the predicted daysabs value based on the new data.</p>
 </code></pre></div><p>type = &ldquo;link&rdquo; produces a predict value in the form of &ldquo;log&rdquo;.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">newdata1<span style="color:#f92672">$</span>pred <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(modelnb, newdata1, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;link&#34;</span>)
 newdata1
-</code></pre></div><pre><code>#&gt;       math       prog     pred
+</code></pre></div><pre tabindex="0"><code>#&gt;       math       prog     pred
 #&gt; 1 48.26752    General 2.325999
 #&gt; 2 48.26752   Academic 1.885239
 #&gt; 3 48.26752 Vocational 1.047348
 </code></pre><p>type = &ldquo;response&rdquo;  generate predictive value that has been exponential &ldquo;exp&rdquo;.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">newdata1<span style="color:#f92672">$</span>pred <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(modelnb, newdata1, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;response&#34;</span>)
 newdata1
-</code></pre></div><pre><code>#&gt;       math       prog      pred
+</code></pre></div><pre tabindex="0"><code>#&gt;       math       prog      pred
 #&gt; 1 48.26752    General 10.236899
 #&gt; 2 48.26752   Academic  6.587927
 #&gt; 3 48.26752 Vocational  2.850083
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">exp</span>(estnb)
-</code></pre></div><pre><code>#&gt;                  Estimate
+</code></pre></div><pre tabindex="0"><code>#&gt;                  Estimate
 #&gt; (Intercept)    13.6708448
 #&gt; math            0.9940249
 #&gt; progAcademic    0.6435471
 #&gt; progVocational  0.2784127
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">#academic dan general</span>
 <span style="color:#ae81ff">10.236899</span><span style="color:#f92672">*</span><span style="color:#ae81ff">0.6435471</span> <span style="color:#75715e">#academic</span>
-</code></pre></div><pre><code>#&gt; [1] 6.587927
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 6.587927
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">#vocational dan general</span>
 <span style="color:#ae81ff">10.236899</span><span style="color:#f92672">*</span><span style="color:#ae81ff">0.2784127</span>
-</code></pre></div><pre><code>#&gt; [1] 2.850083
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 2.850083
 </code></pre><p>From the results above it is proven that :</p>
 <ul>
 <li>

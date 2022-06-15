@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -648,6 +648,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -665,42 +701,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -947,7 +947,7 @@ if (!doNotTrack) {
 <p>We can directly export it in the form of TopoJSON (similar if not lighter than GeoJSON, and we can use this because our data is clean enough <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>). But for now, we will try to select/filter the areas we want to focus on.</p>
 <p>In the mapshaper, there is a <em>console</em> that we can use to process map data. We can see commands that we can use with <code>help</code> and see some examples of using console with <code>tips</code>.</p>
 <p>We will try to select only in the sub-district (<code>gadm36_IDN_3</code>) and we filter only on the DKI Jakarta area:</p>
-<pre><code>filter 'NAME_1 == &quot;Jakarta Raya&quot;'
+<pre tabindex="0"><code>filter 'NAME_1 == &quot;Jakarta Raya&quot;'
 </code></pre><!-- raw HTML omitted -->
 <p>After that, we will export the data as TopoJSON by clicking &lsquo;Export&rsquo; at the top right.</p>
 <p>Then, to read the <code>.json</code> data in R, we will use the <code>geojsonio</code> package. In the <code>geojson_read</code> function, we specify <code>what = &quot;sp&quot;</code> to make sure the data we read is a spatial class, not <em>list</em>. Due to the data we have from different sources and differences in the &ldquo;Pulau Seribu&rdquo; section (vs. &ldquo;Kep. Seribu&rdquo;), we will omit that section.</p>
@@ -955,7 +955,7 @@ if (!doNotTrack) {
 jakarta_json <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">geojson_read</span>(<span style="color:#e6db74">&#34;data_input/clean/gadm36_IDN_3_jkt.json&#34;</span>, what <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sp&#34;</span>)
 </code></pre></div><p>If you want to check the data first, you can use <code>@</code> to see the contents of the table</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">head</span>(jakarta_json<span style="color:#f92672">@</span>data)
-</code></pre></div><pre><code>#&gt;     id GID_0    NAME_0   GID_1       NAME_1 NL_NAME_1     GID_2        NAME_2
+</code></pre></div><pre tabindex="0"><code>#&gt;     id GID_0    NAME_0   GID_1       NAME_1 NL_NAME_1     GID_2        NAME_2
 #&gt; 1 &lt;NA&gt;   IDN Indonesia IDN.7_1 Jakarta Raya           IDN.7.1_1 Jakarta Barat
 #&gt; 2 &lt;NA&gt;   IDN Indonesia IDN.7_1 Jakarta Raya           IDN.7.1_1 Jakarta Barat
 #&gt; 3 &lt;NA&gt;   IDN Indonesia IDN.7_1 Jakarta Raya           IDN.7.1_1 Jakarta Barat
@@ -989,7 +989,7 @@ jakarta_json_mod <span style="color:#f92672">&lt;-</span> jakarta_json_mod <span
   dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(<span style="color:#f92672">-</span><span style="color:#a6e22e">c</span>(id, NL_NAME_1, NL_NAME_2, NL_NAME_3, VARNAME_3, HASC_3, TYPE_3, ENGTYPE_3)) 
 
 <span style="color:#a6e22e">glimpse</span>(jakarta_json_mod)
-</code></pre></div><pre><code>#&gt; Observations: 45
+</code></pre></div><pre tabindex="0"><code>#&gt; Observations: 45
 #&gt; Variables: 10
 #&gt; $ GID_0    &lt;chr&gt; &quot;IDN&quot;, &quot;IDN&quot;, &quot;IDN&quot;, &quot;IDN&quot;, &quot;IDN&quot;, &quot;IDN&quot;, &quot;IDN&quot;, &quot;IDN&quot;, &quot;I...
 #&gt; $ NAME_0   &lt;chr&gt; &quot;Indonesia&quot;, &quot;Indonesia&quot;, &quot;Indonesia&quot;, &quot;Indonesia&quot;, &quot;Indon...
@@ -1011,7 +1011,7 @@ jakarta_json_mod <span style="color:#f92672">&lt;-</span> jakarta_json_mod <span
   dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(<span style="color:#f92672">-</span><span style="color:#a6e22e">c</span>(NL_NAME_1, NL_NAME_2, NL_NAME_3, VARNAME_3, HASC_3, TYPE_3, ENGTYPE_3))
 
 <span style="color:#a6e22e">glimpse</span>(jakarta_rds)
-</code></pre></div><pre><code>#&gt; Observations: 45
+</code></pre></div><pre tabindex="0"><code>#&gt; Observations: 45
 #&gt; Variables: 10
 #&gt; $ GID_0    &lt;chr&gt; &quot;IDN&quot;, &quot;IDN&quot;, &quot;IDN&quot;, &quot;IDN&quot;, &quot;IDN&quot;, &quot;IDN&quot;, &quot;IDN&quot;, &quot;IDN&quot;, &quot;I...
 #&gt; $ NAME_0   &lt;chr&gt; &quot;Indonesia&quot;, &quot;Indonesia&quot;, &quot;Indonesia&quot;, &quot;Indonesia&quot;, &quot;Indon...
@@ -1025,9 +1025,9 @@ jakarta_json_mod <span style="color:#f92672">&lt;-</span> jakarta_json_mod <span
 #&gt; $ geometry &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((106.7004 -6..., MULTIPOLYGON ...
 </code></pre><p>We can see that both data already contain the same information and with the same class. Please note that the next time we use <code>leaflet</code>, one of the data type they can read is spatial data frames from package <code>lf</code> (see <code>?leaflet</code> for further details).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">class</span>(jakarta_rds)
-</code></pre></div><pre><code>#&gt; [1] &quot;sf&quot;         &quot;data.frame&quot;
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] &quot;sf&quot;         &quot;data.frame&quot;
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">class</span>(jakarta_json_mod)
-</code></pre></div><pre><code>#&gt; [1] &quot;sf&quot;         &quot;data.frame&quot;
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] &quot;sf&quot;         &quot;data.frame&quot;
 </code></pre><p>We can continue to use one of the data we have read previously. This time, we will use the data that had been read earlier through mapshaper (<code>jakarta_json_mod</code>).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">rm</span>(indonesia_rds, jakarta_rds)
 </code></pre></div><h2 id="processing-the-data">Processing The Data</h2>
@@ -1041,7 +1041,7 @@ hidran_mod <span style="color:#f92672">&lt;-</span> hidran <span style="color:#f
   <span style="color:#a6e22e">filter</span>(wilayah <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;Kepulauan Seribu&#34;</span>) 
 
 <span style="color:#a6e22e">head</span>(hidran_mod)
-</code></pre></div><pre><code>#&gt;   no       wilayah       lokasi kondisi jumlah  latitude longitude
+</code></pre></div><pre tabindex="0"><code>#&gt;   no       wilayah       lokasi kondisi jumlah  latitude longitude
 #&gt; 1  1 Jakarta Pusat       Gambir    Baik     20 -6.169115  106.8165
 #&gt; 2  2 Jakarta Pusat   Tanahabang    Baik     36 -6.206441  106.8122
 #&gt; 3  3 Jakarta Pusat      Menteng    Baik     30 -6.195425  106.8346
@@ -1060,7 +1060,7 @@ hidran_mod <span style="color:#f92672">&lt;-</span> hidran <span style="color:#f
   <span style="color:#a6e22e">ungroup</span>()
 
 <span style="color:#a6e22e">glimpse</span>(hidran_mod)
-</code></pre></div><pre><code>#&gt; Observations: 82
+</code></pre></div><pre tabindex="0"><code>#&gt; Observations: 82
 #&gt; Variables: 4
 #&gt; $ wilayah &lt;fct&gt; Jakarta Barat, Jakarta Barat, Jakarta Barat, Jakarta Barat,...
 #&gt; $ lokasi  &lt;chr&gt; &quot;Cengkareng&quot;, &quot;Cengkareng&quot;, &quot;Grogolpetamburan&quot;, &quot;Grogolpeta...
@@ -1095,7 +1095,7 @@ jakarta_hidran <span style="color:#f92672">&lt;-</span> jakarta_hidran <span sty
   <span style="color:#a6e22e">na.omit</span>()
 
 <span style="color:#a6e22e">glimpse</span>(jakarta_hidran)
-</code></pre></div><pre><code>#&gt; Observations: 90
+</code></pre></div><pre tabindex="0"><code>#&gt; Observations: 90
 #&gt; Variables: 12
 #&gt; $ kondisi  &lt;chr&gt; &quot;Baik&quot;, &quot;Rusak&quot;, &quot;Baik&quot;, &quot;Rusak&quot;, &quot;Baik&quot;, &quot;Rusak&quot;, &quot;Baik&quot;,...
 #&gt; $ NAME_3   &lt;chr&gt; &quot;Cakung&quot;, &quot;Cakung&quot;, &quot;Cempakaputih&quot;, &quot;Cempakaputih&quot;, &quot;Cengk...
@@ -1113,15 +1113,15 @@ jakarta_hidran <span style="color:#f92672">&lt;-</span> jakarta_hidran <span sty
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">leaflet</span>(jakarta_hidran) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">addTiles</span>() <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">addPolygons</span>()
-</code></pre></div><pre><code>#&gt; Error in polygonData.default(data): Don't know how to get path data from object of class tbl_df
+</code></pre></div><pre tabindex="0"><code>#&gt; Error in polygonData.default(data): Don't know how to get path data from object of class tbl_df
 </code></pre><p>This is because when we perform the <code>complete</code> function, our data will be converted into<code> tbl_df</code> data type, and this type is not accepted by <code>leaflet</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">class</span>(jakarta_hidran)
-</code></pre></div><pre><code>#&gt; [1] &quot;tbl_df&quot;     &quot;tbl&quot;        &quot;data.frame&quot;
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] &quot;tbl_df&quot;     &quot;tbl&quot;        &quot;data.frame&quot;
 </code></pre><p>For that, we will change it back to <code>sf</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">jakarta_hidran_sf <span style="color:#f92672">&lt;-</span> jakarta_hidran <span style="color:#f92672">%&gt;%</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_as_sf</span>()
 
 <span style="color:#a6e22e">class</span>(jakarta_hidran_sf)
-</code></pre></div><pre><code>#&gt; [1] &quot;sf&quot;         &quot;tbl_df&quot;     &quot;tbl&quot;        &quot;data.frame&quot;
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] &quot;sf&quot;         &quot;tbl_df&quot;     &quot;tbl&quot;        &quot;data.frame&quot;
 </code></pre><h2 id="showing-the-choropleth-using-leaflet">Showing the Choropleth using <code>leaflet</code></h2>
 <p>In presenting data, we will first put our data into leaflet. Then, the appropriate coloring for <em>choropleth</em> will be formed. Palette is determined from red to blue (please see <em>cheatsheet</em> that has been provided). In addition, a popup is also made for each place.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># leaflet</span>

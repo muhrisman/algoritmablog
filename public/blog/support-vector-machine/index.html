@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -648,6 +648,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -665,42 +701,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -948,7 +948,7 @@ if (!doNotTrack) {
 <p>Let&rsquo;s apply what we learn above to do classification using 1000 past records of bank loans, each with a variable <code>default</code> that indicates whether the applicant did default on the loan.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">loans <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;data_input/loan.csv&#34;</span>)
 <span style="color:#a6e22e">colnames</span>(loans)
-</code></pre></div><pre><code>##  [1] &quot;checking_balance&quot;     &quot;months_loan_duration&quot; &quot;credit_history&quot;      
+</code></pre></div><pre tabindex="0"><code>##  [1] &quot;checking_balance&quot;     &quot;months_loan_duration&quot; &quot;credit_history&quot;      
 ##  [4] &quot;purpose&quot;              &quot;amount&quot;               &quot;savings_balance&quot;     
 ##  [7] &quot;employment_duration&quot;  &quot;percent_of_income&quot;    &quot;years_at_residence&quot;  
 ## [10] &quot;age&quot;                  &quot;other_credit&quot;         &quot;housing&quot;             
@@ -967,7 +967,7 @@ modelsvm2<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">svm
 preds1<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">predict</span>(modelsvm1,loans.test[,<span style="color:#ae81ff">-17</span>])
 preds2<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">predict</span>(modelsvm2,loans.test[,<span style="color:#ae81ff">-17</span>])
 <span style="color:#a6e22e">CrossTable</span>(preds1,loans.test<span style="color:#f92672">$</span>default)
-</code></pre></div><pre><code>## 
+</code></pre></div><pre tabindex="0"><code>## 
 ##  
 ##    Cell Contents
 ## |-------------------------|
@@ -1003,7 +1003,7 @@ preds2<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">predic
 ## 
 ## 
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">CrossTable</span>(preds2,loans.test<span style="color:#f92672">$</span>default)
-</code></pre></div><pre><code>## 
+</code></pre></div><pre tabindex="0"><code>## 
 ##  
 ##    Cell Contents
 ## |-------------------------|
@@ -1041,7 +1041,7 @@ preds2<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">predic
 </code></pre><p>the svm radial kernel perform better with the 79% accuracy. Let&rsquo;s tune the c and gamma parameter using &lsquo;tune.svm()&rsquo; function.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">svmmodel<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">tune.svm</span>(default<span style="color:#f92672">~</span>., data <span style="color:#f92672">=</span> loans.test, kernel<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;radial&#34;</span>,gamma <span style="color:#f92672">=</span><span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">0.01</span>,<span style="color:#ae81ff">0.1</span>,len<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>), cost<span style="color:#f92672">=</span><span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">50</span>,len<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>),tunecontrol<span style="color:#f92672">=</span><span style="color:#a6e22e">tune.control</span>(cross<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>))
 <span style="color:#a6e22e">summary</span>(svmmodel)
-</code></pre></div><pre><code>## 
+</code></pre></div><pre tabindex="0"><code>## 
 ## Parameter tuning of 'svm':
 ## 
 ## - sampling method: 5-fold cross validation 
@@ -1159,7 +1159,7 @@ preds2<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">predic
 predsrad<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">predict</span>(svmmodelrad,loans.test[,<span style="color:#ae81ff">-17</span>])
 
 <span style="color:#a6e22e">CrossTable</span>(predsrad,loans.test<span style="color:#f92672">$</span>default)
-</code></pre></div><pre><code>## 
+</code></pre></div><pre tabindex="0"><code>## 
 ##  
 ##    Cell Contents
 ## |-------------------------|

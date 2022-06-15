@@ -13,8 +13,8 @@
       <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/image-classification-cnn/</guid>
-      <description>body { text-align: justify}  Introduction Deep learning is a great approach to deal with unstructured data such as text, sound, video and image. There are a lot of implementation of deep learning in image classification and image detection, such as classifying image of dog or cats, detecting different objects in an image or do facial recognition.
-  On this article, we will try to build a simple image classification that will classify whether the presented image is a cat, dog, or a panda.</description>
+      <description>body {text-align: justify}IntroductionDeep learning is a great approach to deal with unstructured data such as text, sound, video and image. There are a lot of implementation of deep learning in image classification and image detection, such as classifying image of dog or cats, detecting different objects in an image or do facial recognition.
+On this article, we will try to build a simple image classification that will classify whether the presented image is a cat, dog, or a panda.</description>
     </item>
     
     <item>
@@ -23,7 +23,7 @@
       <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/tidymodels-churn-over-prediction/</guid>
-      <description>body { text-align: justify}  Untuk membuat sebuah model machine learning diperlukan beberapa proses seperti praproses data, modeling, sampai model evaluation. R memiliki banyak sekali packages yang dapat digunakan dalam proses pemodelan. Untuk mempermudah seorang data scientist dalam membuat model, Rstudio mengembangkan kumpulan packages yang diberi nama Tidymodels.
+      <description>body {text-align: justify}Untuk membuat sebuah model machine learning diperlukan beberapa proses seperti praproses data, modeling, sampai model evaluation. R memiliki banyak sekali packages yang dapat digunakan dalam proses pemodelan. Untuk mempermudah seorang data scientist dalam membuat model, Rstudio mengembangkan kumpulan packages yang diberi nama Tidymodels.
 Tidymodels merupakan framework yang berisi kumpulan packages untuk membuat model machine learning menggunakan konsep Tidyverse. Beberapa packages seperti rsample, recipes, parsnip, dials, tune, yardstick, workflows sudah saling terintegrasi untuk membuat satu proses pemodelan yang utuh.</description>
     </item>
     
@@ -44,8 +44,8 @@ Outline Why tidymodels Matters?  Things we think we&amp;rsquo;re doing it right 
       
       <guid>https://algotech.netlify.com/blog/purrr-operly-fitting-multiple-time-series-model/</guid>
       <description>In this article, I will explain some basic functional programming for fitting multiple time series using R, particularly using purrr interface.
- TL;DR: you can find the distraction-free script in here, and read some of my concluding remarks for a quick summary :grin:
- Preface When it comes to time series analyses and forecasting, R users are blessed with an invaluable tools that could helps us to conveniently fit–from basic to advanced–univariate time series models: forecast package.</description>
+TL;DR: you can find the distraction-free script in here, and read some of my concluding remarks for a quick summary :grin:
+PrefaceWhen it comes to time series analyses and forecasting, R users are blessed with an invaluable tools that could helps us to conveniently fit–from basic to advanced–univariate time series models: forecast package.</description>
     </item>
     
     <item>
@@ -64,9 +64,9 @@ The term of tidyverse is actually referring to a set of packages that you’ll f
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/nested-dataframe/</guid>
-      <description>1. Setup Libraries and Setup We’ll set-up caching for this notebook given how computationally expensive some of the code we will write can get.
+      <description>1. SetupLibraries and SetupWe’ll set-up caching for this notebook given how computationally expensive some of the code we will write can get.
 You will need to use install.packages() to install any packages that are not already downloaded onto your machine. You then load the package into your workspace using the library() function:
-library(tidyverse) library(caret)   2. Nested Dataframe You’ll learn how to use purrr, caret and dplyr to quickly create some of dataset + model combinations, store data &amp;amp; model objects neatly in one tibble, and post process programatically.</description>
+library(tidyverse)library(caret)2. Nested DataframeYou’ll learn how to use purrr, caret and dplyr to quickly create some of dataset + model combinations, store data &amp;amp; model objects neatly in one tibble, and post process programatically.</description>
     </item>
     
   </channel>

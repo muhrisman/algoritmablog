@@ -32,8 +32,8 @@
       
       <guid>https://algotech.netlify.com/blog/social-network-analysis-in-r/</guid>
       <description>In this article, we will learn about Social Network Analysis using tidygraph (including igraph and ggraph). We’ll not only learn about the visualizing stuff but also the metrics. We’ll analyze Twitter network as our study case using rtweet package. In this article, I hope we will be able to do:
- Analyze Ego Network from specific account/user
- Analyze Information Activity Network from something that goes viral    Background Introduction What is Social Network Analysis (SNA)</description>
+Analyze Ego Network from specific account/user
+Analyze Information Activity Network from something that goes viralBackgroundIntroductionWhat is Social Network Analysis (SNA)</description>
     </item>
     
     <item>
@@ -54,7 +54,7 @@ library(tidyverse) # for data wrangling library(ggplot2) # for data visualizatio
       
       <guid>https://algotech.netlify.com/blog/rplicate-series-coronavirus-survey/</guid>
       <description>Welcome again to the Rplicate Series! In this 5th article of the series. On this occassion, we will try to replicate the first interactive plot from the FiveThirtyEight article titled How Americans View The Coronavirus Crisis And Trump’s Response. This time you’ll learn how to build an interactive plot using highcharter.
-  Library and Setup Below is the required package that we will use during data wrangling and chart creation.</description>
+Library and SetupBelow is the required package that we will use during data wrangling and chart creation.</description>
     </item>
     
     <item>
@@ -113,7 +113,7 @@ There are many types of geospatial that we can do, such as Dot Map, Connection M
       <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/twitter-interactions-analysis-using-twinetverse/</guid>
-      <description>Introduction The goal of the twinetverse is to provide everything one might need to view Twitter interactions, from data collection to visualisation. This could be a powerful tool for social media analysis, since it could help visualizing how users communicate with one another on a given topic or how information spreads throughout the Twitter network.</description>
+      <description>IntroductionThe goal of the twinetverse is to provide everything one might need to view Twitter interactions, from data collection to visualisation. This could be a powerful tool for social media analysis, since it could help visualizing how users communicate with one another on a given topic or how information spreads throughout the Twitter network.</description>
     </item>
     
   </channel>

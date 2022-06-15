@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -645,6 +645,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -662,42 +698,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -879,7 +879,7 @@ if (!doNotTrack) {
 data.f <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;data_input/Suicide_Female.csv&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
 </code></pre></div><p>Let&rsquo;s get a glimpse of our data:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">head</span>(data.m)
-</code></pre></div><pre><code>#&gt;   years X10.to.29 X30.to.44 X45.to.59 X60.to.74 X75.and.over
+</code></pre></div><pre tabindex="0"><code>#&gt;   years X10.to.29 X30.to.44 X45.to.59 X60.to.74 X75.and.over
 #&gt; 1  1981       9.8      19.5      23.1      22.0         28.6
 #&gt; 2  1982       9.1      19.0      23.6      22.0         28.1
 #&gt; 3  1983       9.0      19.7      22.5      22.5         28.6
@@ -887,7 +887,7 @@ data.f <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read
 #&gt; 5  1985      10.8      21.6      23.2      22.6         29.1
 #&gt; 6  1986      11.5      20.9      22.5      23.5         31.3
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">head</span>(data.f)
-</code></pre></div><pre><code>#&gt;   years X10.to.29 X30.to.44 X45.to.59 X60.to.74 X75.and.over
+</code></pre></div><pre tabindex="0"><code>#&gt;   years X10.to.29 X30.to.44 X45.to.59 X60.to.74 X75.and.over
 #&gt; 1  1981       3.0       8.5      15.0      16.2         13.6
 #&gt; 2  1982       3.2       8.4      13.9      15.4         14.2
 #&gt; 3  1983       2.9       8.0      12.8      14.8         13.4

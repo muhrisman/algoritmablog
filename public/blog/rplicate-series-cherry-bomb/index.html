@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -651,6 +651,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -668,42 +704,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -914,7 +914,7 @@ if (!doNotTrack) {
 <p>The first thing we have to do is to load the dataset into R.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">sakura <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;data_input/sakura.csv&#34;</span>)
 <span style="color:#a6e22e">tail</span>(sakura)
-</code></pre></div><pre><code>#&gt;        AD full.flowering.doy full.flowering.date source data.type
+</code></pre></div><pre tabindex="0"><code>#&gt;        AD full.flowering.doy full.flowering.date source data.type
 #&gt; 1213 2013                 93                 403      8         0
 #&gt; 1214 2014                 94                 404      8         0
 #&gt; 1215 2015                 93                 403      8         0
@@ -944,7 +944,7 @@ sakura <span style="color:#f92672">&lt;-</span> sakura <span style="color:#f9267
   <span style="color:#a6e22e">select</span>(AD, full.flowering.date)
 
 <span style="color:#a6e22e">sample_n</span>(sakura,<span style="color:#ae81ff">6</span>) <span style="color:#75715e"># sampling rows</span>
-</code></pre></div><pre><code>#&gt;     AD full.flowering.date
+</code></pre></div><pre tabindex="0"><code>#&gt;     AD full.flowering.date
 #&gt; 1 1367                 407
 #&gt; 2 1589                 415
 #&gt; 3 1957                 413
@@ -957,7 +957,7 @@ sakura <span style="color:#f92672">&lt;-</span> sakura <span style="color:#f9267
   <span style="color:#a6e22e">rename</span>(Year<span style="color:#f92672">=</span>AD)
 
 <span style="color:#a6e22e">head</span>(sakura.used)
-</code></pre></div><pre><code>#&gt;   Year full.flowering.date
+</code></pre></div><pre tabindex="0"><code>#&gt;   Year full.flowering.date
 #&gt; 1  812                 401
 #&gt; 2  815                 415
 #&gt; 3  831                 406
@@ -971,7 +971,7 @@ sakura <span style="color:#f92672">&lt;-</span> sakura <span style="color:#f9267
            sep <span style="color:#f92672">=</span> <span style="color:#ae81ff">-2</span>) <span style="color:#75715e"># separate from the last 2 digits</span>
 
 <span style="color:#a6e22e">head</span>(sakura.plot)
-</code></pre></div><pre><code>#&gt;   Year month day
+</code></pre></div><pre tabindex="0"><code>#&gt;   Year month day
 #&gt; 1  812     4  01
 #&gt; 2  815     4  15
 #&gt; 3  831     4  06
@@ -986,7 +986,7 @@ sakura.plot <span style="color:#f92672">&lt;-</span> sakura.plot <span style="co
                      digits <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)) <span style="color:#75715e"># to set for 0 number behind decimal point </span>
 
 <span style="color:#a6e22e">head</span>(sakura.plot)
-</code></pre></div><pre><code>#&gt;   Year month day
+</code></pre></div><pre tabindex="0"><code>#&gt;   Year month day
 #&gt; 1  812     4   1
 #&gt; 2  815     4  15
 #&gt; 3  831     4   6
@@ -1001,7 +1001,7 @@ sakura.plot <span style="color:#f92672">&lt;-</span> sakura.plot <span style="co
   
 
 <span style="color:#a6e22e">head</span>(sakura.plot)
-</code></pre></div><pre><code>#&gt;   Year month day       date
+</code></pre></div><pre tabindex="0"><code>#&gt;   Year month day       date
 #&gt; 1  812 April   1 0812-04-01
 #&gt; 2  815 April  15 0815-04-15
 #&gt; 3  831 April   6 0831-04-06
@@ -1009,14 +1009,14 @@ sakura.plot <span style="color:#f92672">&lt;-</span> sakura.plot <span style="co
 #&gt; 5  853 April  14 0853-04-14
 #&gt; 6  864 April   9 0864-04-09
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">unique</span>(sakura.plot<span style="color:#f92672">$</span>month)
-</code></pre></div><pre><code>#&gt; [1] April March May  
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] April March May  
 #&gt; 12 Levels: January &lt; February &lt; March &lt; April &lt; May &lt; June &lt; ... &lt; December
 </code></pre><p>If we look at the order of our <code>month</code> column, it is still in the reverse format. We can reverse the order of the levels by using the function <code>fct_rev()</code> from <strong>forcats</strong> package. Forcats package itself contains many functions form working with categorical variables/factors.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">sakura.plot <span style="color:#f92672">&lt;-</span> sakura.plot <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">mutate</span>(month <span style="color:#f92672">=</span> forcats<span style="color:#f92672">::</span><span style="color:#a6e22e">fct_rev</span>(month))
 
 <span style="color:#a6e22e">unique</span>(sakura.plot<span style="color:#f92672">$</span>month)
-</code></pre></div><pre><code>#&gt; [1] April March May  
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] April March May  
 #&gt; 12 Levels: December &lt; November &lt; October &lt; September &lt; August &lt; ... &lt; January
 </code></pre><p>We have now obtained the data ready for plotting.</p>
 <h1 id="create-plot">Create Plot</h1>

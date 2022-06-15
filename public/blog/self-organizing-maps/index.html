@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -645,6 +645,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -662,42 +698,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -930,7 +930,7 @@ if (!doNotTrack) {
 <p>First of all we want to import the data in this workspace.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">ads <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;data_input/KAG_conversion_data.csv&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">glimpse</span>()
-</code></pre></div><pre><code>#&gt; Observations: 1,143
+</code></pre></div><pre tabindex="0"><code>#&gt; Observations: 1,143
 #&gt; Variables: 11
 #&gt; $ ad_id               &lt;int&gt; 708746, 708749, 708771, 708815, 708818, 708820,...
 #&gt; $ xyz_campaign_id     &lt;int&gt; 916, 916, 916, 916, 916, 916, 916, 916, 916, 91...
@@ -962,7 +962,7 @@ if (!doNotTrack) {
          fb_campaign_id <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(fb_campaign_id))
 
 <span style="color:#a6e22e">levels</span>(ads<span style="color:#f92672">$</span>xyz_campaign_id)
-</code></pre></div><pre><code>#&gt; [1] &quot;916&quot;  &quot;936&quot;  &quot;1178&quot;
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] &quot;916&quot;  &quot;936&quot;  &quot;1178&quot;
 </code></pre><p>As we know that if SOM used numerical data, so if we have categorical variables we must to change those variables to dummy variables.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># change the chategoric variables to a dummy variables</span>
 ads.s <span style="color:#f92672">&lt;-</span> ads <span style="color:#f92672">%&gt;%</span> 
@@ -991,12 +991,12 @@ ads.model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">s
 <h2 class="tabset tabset-fade tabset-pills" id="visualize-of-som">Visualize of SOM</h2>
 <p>Before visualizingSOM model, let’s explore a list of SOM model. If we want to know that our data position in maps, we look it in <code>unit.classif</code>. Each value represent the node number to which this application belongs. For example, in the first value of the application, 12 means that in the first application has been classified into 12 particular node.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">head</span>(ads.model<span style="color:#f92672">$</span>unit.classif)
-</code></pre></div><pre><code>#&gt; [1] 12 13 13 23 22 22
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 12 13 13 23 22 22
 </code></pre><p>And we can see the classification of each nodes by codes plot and we can see the values of each nodes using the mapping plot.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">plot</span>(ads.model, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mapping&#34;</span>, pchs <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, shape <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;round&#34;</span>)
 </code></pre></div><p><!-- raw HTML omitted --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">head</span>(<span style="color:#a6e22e">data.frame</span>(ads.train), <span style="color:#ae81ff">5</span>)
-</code></pre></div><pre><code>#&gt;     interest Impressions     Clicks      Spent Total_Conversion
+</code></pre></div><pre tabindex="0"><code>#&gt;     interest Impressions     Clicks      Spent Total_Conversion
 #&gt; 1 -0.6591837  -0.5735416 -0.5693235 -0.5745204       -0.1908387
 #&gt; 2 -0.6220808  -0.5399346 -0.5517465 -0.5700329       -0.1908387
 #&gt; 3 -0.4736696  -0.5948262 -0.5869005 -0.5909745       -0.4138741
@@ -1064,7 +1064,7 @@ clust <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kmean
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># know cluster each data</span>
 ads.cluster <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(ads.s, cluster <span style="color:#f92672">=</span> clust<span style="color:#f92672">$</span>cluster[ads.model<span style="color:#f92672">$</span>unit.classif])
 <span style="color:#a6e22e">tail</span>(ads.cluster, <span style="color:#ae81ff">10</span>)
-</code></pre></div><pre><code>#&gt;      xyz_campaign_id interest Impressions Clicks  Spent Total_Conversion
+</code></pre></div><pre tabindex="0"><code>#&gt;      xyz_campaign_id interest Impressions Clicks  Spent Total_Conversion
 #&gt; 1134            1178      104      558666    110 162.64               14
 #&gt; 1135            1178      105     1118200    235 333.75               11
 #&gt; 1136            1178      106      107100     23  33.71                1
@@ -1116,7 +1116,7 @@ class <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">xyf</
 <p>To make sure our model is fit enough, we predict our test data <code>testXY</code> using <code>class</code> model. We got the confusion matrix of the prediction. In this data, we get 100% accuracy to predict each class.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">pred <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(class, newdata <span style="color:#f92672">=</span> testXY)
 <span style="color:#a6e22e">table</span>(Predict <span style="color:#f92672">=</span> pred<span style="color:#f92672">$</span>predictions[[2]], Actual <span style="color:#f92672">=</span> test.label)
-</code></pre></div><pre><code>#&gt;        Actual
+</code></pre></div><pre tabindex="0"><code>#&gt;        Actual
 #&gt; Predict 916 936 1178
 #&gt;    916   14   0    0
 #&gt;    936    0 101    0

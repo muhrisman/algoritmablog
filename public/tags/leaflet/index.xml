@@ -6,7 +6,27 @@
     <description>Recent content in Leaflet on Algoritma Technical Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://algotech.netlify.com/tags/leaflet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://algotech.netlify.com/tags/leaflet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</title>
+      <link>https://algotech.netlify.com/blog/regresi-terboboti-geografis/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/blog/regresi-terboboti-geografis/</guid>
+      <description>Latar BelakangAnalisis regresi adalah satu metode machine learning yang bertujuan untuk memprediksi target variabel berdasarkan variabel-variabel pendukung sesuai dengan kajian-kajian yang mendasarinya. Analisis regresi cukup populer dan banyak diaplikasikan pada banyak disiplin ilmu mulai dari kajian dalam ruang lingkup ekonomi dan bisnis hingga fenomena sehari-hari.
+Salah satu kajian dalam analisis regresi adalah dengan mempertimbangkan data spasial. Model regresi spasial dapat melakukan eksplorasi suatu kasus yang berhubungan dengan aspek kewilayahan.</description>
+    </item>
+    
+    <item>
+      <title>Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</title>
+      <link>https://algotech.netlify.com/blog/regresi-terboboti-geografis/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/blog/regresi-terboboti-geografis/</guid>
+      <description>Latar BelakangAnalisis regresi adalah satu metode machine learning yang bertujuan untuk memprediksi target variabel berdasarkan variabel-variabel pendukung sesuai dengan kajian-kajian yang mendasarinya. Analisis regresi cukup populer dan banyak diaplikasikan pada banyak disiplin ilmu mulai dari kajian dalam ruang lingkup ekonomi dan bisnis hingga fenomena sehari-hari.
+Salah satu kajian dalam analisis regresi adalah dengan mempertimbangkan data spasial. Model regresi spasial dapat melakukan eksplorasi suatu kasus yang berhubungan dengan aspek kewilayahan.</description>
+    </item>
+    
     <item>
       <title>Creating Choropleth with Mapshaper and R</title>
       <link>https://algotech.netlify.com/blog/creating-choropleth-with-mapshaper-and-r/</link>

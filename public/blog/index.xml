@@ -6,14 +6,43 @@
     <description>Recent content in Blog on Algoritma Technical Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://algotech.netlify.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://algotech.netlify.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</title>
+      <link>https://algotech.netlify.com/blog/regresi-terboboti-geografis/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/blog/regresi-terboboti-geografis/</guid>
+      <description>Latar BelakangAnalisis regresi adalah satu metode machine learning yang bertujuan untuk memprediksi target variabel berdasarkan variabel-variabel pendukung sesuai dengan kajian-kajian yang mendasarinya. Analisis regresi cukup populer dan banyak diaplikasikan pada banyak disiplin ilmu mulai dari kajian dalam ruang lingkup ekonomi dan bisnis hingga fenomena sehari-hari.
+Salah satu kajian dalam analisis regresi adalah dengan mempertimbangkan data spasial. Model regresi spasial dapat melakukan eksplorasi suatu kasus yang berhubungan dengan aspek kewilayahan.</description>
+    </item>
+    
+    <item>
+      <title>Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</title>
+      <link>https://algotech.netlify.com/blog/regresi-terboboti-geografis/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/blog/regresi-terboboti-geografis/</guid>
+      <description>Latar BelakangAnalisis regresi adalah satu metode machine learning yang bertujuan untuk memprediksi target variabel berdasarkan variabel-variabel pendukung sesuai dengan kajian-kajian yang mendasarinya. Analisis regresi cukup populer dan banyak diaplikasikan pada banyak disiplin ilmu mulai dari kajian dalam ruang lingkup ekonomi dan bisnis hingga fenomena sehari-hari.
+Salah satu kajian dalam analisis regresi adalah dengan mempertimbangkan data spasial. Model regresi spasial dapat melakukan eksplorasi suatu kasus yang berhubungan dengan aspek kewilayahan.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Local Outlier Factor with R</title>
+      <link>https://algotech.netlify.com/blog/local-outlier-factor-with-r/</link>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://algotech.netlify.com/blog/local-outlier-factor-with-r/</guid>
+      <description>body{text-align: justify}OverviewLocal Outlier Factor (LOF) is an unsupervised machine learning algorithm to detect outlier observations in a multivariate dataset.</description>
+    </item>
+    
     <item>
       <title>Regression ARIMA (ARIMAX)</title>
       <link>https://algotech.netlify.com/blog/regression-arima-arimax/</link>
       <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/regression-arima-arimax/</guid>
-      <description>Libraries and Setup Di era ini, kita sering membutuhkan analisis prediktif untuk membantu kita dalam membuat keputusan. Salah satu hal penting dalam prediksi adalah memprediksi untuk data-data di masa depan. Jenis prediksi ini sering juga disebut dengan peramalan.
+      <description>Libraries and SetupDi era ini, kita sering membutuhkan analisis prediktif untuk membantu kita dalam membuat keputusan. Salah satu hal penting dalam prediksi adalah memprediksi untuk data-data di masa depan. Jenis prediksi ini sering juga disebut dengan peramalan.
 Peramalan banyak dibutuhkan di berbagai situasi: menentukan apakah akan membangun pembangkit listrik lain dalam lima tahun ke depan membutuhkan prakiraan permintaan di masa depan; staf penjadwalan di pusat panggilan minggu depan membutuhkan prakiraan volume panggilan; persediaan persediaan membutuhkan prakiraan kebutuhan persediaan1.</description>
     </item>
     
@@ -23,7 +52,7 @@ Peramalan banyak dibutuhkan di berbagai situasi: menentukan apakah akan membangu
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/hotel-forecast/</guid>
-      <description>body { text-align: justify}  Background   Hospitality industry is growing, with more and more people spending their money for vacation and leisure activities. People may only lodge into a hotel when it’s a holiday season or a special event, thus the demand for staying room is not equally distributed accross the year. To maximize the revenue gained by the hotel, the management often employed a pricing strategy, one of them being raising the room rate when the demand is high and making a promo when the demand is low.</description>
+      <description>body {text-align: justify}BackgroundHospitality industry is growing, with more and more people spending their money for vacation and leisure activities. People may only lodge into a hotel when it’s a holiday season or a special event, thus the demand for staying room is not equally distributed accross the year. To maximize the revenue gained by the hotel, the management often employed a pricing strategy, one of them being raising the room rate when the demand is high and making a promo when the demand is low.</description>
     </item>
     
     <item>
@@ -41,7 +70,7 @@ Peramalan banyak dibutuhkan di berbagai situasi: menentukan apakah akan membangu
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/gridsearchcv/</guid>
-      <description>Background Proses pengerjaan machine learning pada umumnya meliputi uji coba berbagai model terhadap dataset dengan memilih model dengan performa terbaik. Untuk mendapatkan hasil prediksi data yang akurat, diperlukan tidak hanya model machine learning yang tepat, tetapi juga hyperparameter (parameter yang mengatur proses pembelajaran mesin) yang tepat pula yang dikenal dengan istilah hyperparameter tuning. Menentukan kombinasi yang tepat antara model dan hyperparameter seringkali menjadi tantangan.
+      <description>BackgroundProses pengerjaan machine learning pada umumnya meliputi uji coba berbagai model terhadap dataset dengan memilih model dengan performa terbaik. Untuk mendapatkan hasil prediksi data yang akurat, diperlukan tidak hanya model machine learning yang tepat, tetapi juga hyperparameter (parameter yang mengatur proses pembelajaran mesin) yang tepat pula yang dikenal dengan istilah hyperparameter tuning. Menentukan kombinasi yang tepat antara model dan hyperparameter seringkali menjadi tantangan.
 Grid Search Cross Validation adalah metode pemilihan kombinasi model dan hyperparameter dengan cara menguji coba satu persatu kombinasi dan melakukan validasi untuk setiap kombinasi.</description>
     </item>
     
@@ -54,7 +83,7 @@ Grid Search Cross Validation adalah metode pemilihan kombinasi model dan hyperpa
       <description>Dalam pemrosesan data berbentuk teks, kita dapat menggunakan fitur text similarity (ukuran kemiripan teks) untuk mendukung model yang kita bangun. Beberapa contoh aplikasi text similarity yang dapat digunakan yaitu:
 Search Engine (Mesin Pencarian)
 Dalam mesin pencarian, dapat digunakan text similarity untuk mengukur kemiripan antara hal yang ingin dicari dengan data yang dimiliki.
- Chatbot
+Chatbot
 Ukuran kemiripannya digunakan untuk memilih jawaban bot yang tepat berdasarkan kemiripan pertanyaan atau pernyataan yang ditulis pengguna dengan database yang ada.</description>
     </item>
     
@@ -73,7 +102,7 @@ Ukuran kemiripannya digunakan untuk memilih jawaban bot yang tepat berdasarkan k
       <pubDate>Wed, 28 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/image-colorization/</guid>
-      <description>body { text-align: justify}  Image Colorization Deep Learning - Convolutional Neural Network Introduction Image colorization is the process of assigning colors to a grayscale image to make it more aesthetically appealing and perceptually meaningful. These are recognized as sophisticated tasks than often require prior knowledge of image content and manual adjustments to achieve artifact-free quality. Also, since objects can have different colors, there are many possible ways to assign colors to pixels in an image, which means there is no unique solution to this problem.</description>
+      <description>body {text-align: justify}Image Colorization Deep Learning - Convolutional Neural NetworkIntroductionImage colorization is the process of assigning colors to a grayscale image to make it more aesthetically appealing and perceptually meaningful. These are recognized as sophisticated tasks than often require prior knowledge of image content and manual adjustments to achieve artifact-free quality. Also, since objects can have different colors, there are many possible ways to assign colors to pixels in an image, which means there is no unique solution to this problem.</description>
     </item>
     
     <item>
@@ -82,8 +111,8 @@ Ukuran kemiripannya digunakan untuk memilih jawaban bot yang tepat berdasarkan k
       <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/image-classification-cnn/</guid>
-      <description>body { text-align: justify}  Introduction Deep learning is a great approach to deal with unstructured data such as text, sound, video and image. There are a lot of implementation of deep learning in image classification and image detection, such as classifying image of dog or cats, detecting different objects in an image or do facial recognition.
-  On this article, we will try to build a simple image classification that will classify whether the presented image is a cat, dog, or a panda.</description>
+      <description>body {text-align: justify}IntroductionDeep learning is a great approach to deal with unstructured data such as text, sound, video and image. There are a lot of implementation of deep learning in image classification and image detection, such as classifying image of dog or cats, detecting different objects in an image or do facial recognition.
+On this article, we will try to build a simple image classification that will classify whether the presented image is a cat, dog, or a panda.</description>
     </item>
     
     <item>
@@ -92,7 +121,7 @@ Ukuran kemiripannya digunakan untuk memilih jawaban bot yang tepat berdasarkan k
       <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/tidymodels-churn-over-prediction/</guid>
-      <description>body { text-align: justify}  Untuk membuat sebuah model machine learning diperlukan beberapa proses seperti praproses data, modeling, sampai model evaluation. R memiliki banyak sekali packages yang dapat digunakan dalam proses pemodelan. Untuk mempermudah seorang data scientist dalam membuat model, Rstudio mengembangkan kumpulan packages yang diberi nama Tidymodels.
+      <description>body {text-align: justify}Untuk membuat sebuah model machine learning diperlukan beberapa proses seperti praproses data, modeling, sampai model evaluation. R memiliki banyak sekali packages yang dapat digunakan dalam proses pemodelan. Untuk mempermudah seorang data scientist dalam membuat model, Rstudio mengembangkan kumpulan packages yang diberi nama Tidymodels.
 Tidymodels merupakan framework yang berisi kumpulan packages untuk membuat model machine learning menggunakan konsep Tidyverse. Beberapa packages seperti rsample, recipes, parsnip, dials, tune, yardstick, workflows sudah saling terintegrasi untuk membuat satu proses pemodelan yang utuh.</description>
     </item>
     
@@ -103,8 +132,8 @@ Tidymodels merupakan framework yang berisi kumpulan packages untuk membuat model
       
       <guid>https://algotech.netlify.com/blog/social-network-analysis-in-r/</guid>
       <description>In this article, we will learn about Social Network Analysis using tidygraph (including igraph and ggraph). We’ll not only learn about the visualizing stuff but also the metrics. We’ll analyze Twitter network as our study case using rtweet package. In this article, I hope we will be able to do:
- Analyze Ego Network from specific account/user
- Analyze Information Activity Network from something that goes viral    Background Introduction What is Social Network Analysis (SNA)</description>
+Analyze Ego Network from specific account/user
+Analyze Information Activity Network from something that goes viralBackgroundIntroductionWhat is Social Network Analysis (SNA)</description>
     </item>
     
     <item>
@@ -163,7 +192,7 @@ R also provide web scrapping tools like the famous rvest but RSelenium gives mor
       
       <guid>https://algotech.netlify.com/blog/rplicate-series-coronavirus-survey/</guid>
       <description>Welcome again to the Rplicate Series! In this 5th article of the series. On this occassion, we will try to replicate the first interactive plot from the FiveThirtyEight article titled How Americans View The Coronavirus Crisis And Trump’s Response. This time you’ll learn how to build an interactive plot using highcharter.
-  Library and Setup Below is the required package that we will use during data wrangling and chart creation.</description>
+Library and SetupBelow is the required package that we will use during data wrangling and chart creation.</description>
     </item>
     
     <item>
@@ -183,7 +212,7 @@ Load Packages These are the packages and some set up that we will use.</descript
       <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/xgboost/</guid>
-      <description>body { text-align: justify}  Introduction What is boosting? Boosting is an ensemble method of converting weak learners into strong learners. Weak and strong refer to a measure how correlated are the learners to the actual target variable[^1]. In boosting, each training sample are used to train one unit of decision tree and picked with replacement over-weighted data. The trees will learn from predecessors and updates the residuals error.</description>
+      <description>body {text-align: justify}IntroductionWhat is boosting?Boosting is an ensemble method of converting weak learners into strong learners. Weak and strong refer to a measure how correlated are the learners to the actual target variable[^1]. In boosting, each training sample are used to train one unit of decision tree and picked with replacement over-weighted data. The trees will learn from predecessors and updates the residuals error.</description>
     </item>
     
     <item>
@@ -192,7 +221,7 @@ Load Packages These are the packages and some set up that we will use.</descript
       <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/fuzzy-clustering/</guid>
-      <description>head { text-align: center } body { text-align: justify }  Introduction Clustering Clustering merupakan salah satu metode machine learning dan termasuk dalam unsupervised learning. Unsupervised learning adalah metode machine learning di mana dalam data yang akan dianalisis tidak terdapat target variabel. Dalam unsupervised learning lebih fokus dalam melakukan eksplorasi data seperti mencari pola dalam data. Clustering sendiri bertujuan mencari pola data yang mirip sehingga memiliki kemungkinan dalam mengelompokkan data-data yang mirip tersebut.</description>
+      <description>head {text-align: center}body {text-align: justify}IntroductionClusteringClustering merupakan salah satu metode machine learning dan termasuk dalam unsupervised learning. Unsupervised learning adalah metode machine learning di mana dalam data yang akan dianalisis tidak terdapat target variabel. Dalam unsupervised learning lebih fokus dalam melakukan eksplorasi data seperti mencari pola dalam data. Clustering sendiri bertujuan mencari pola data yang mirip sehingga memiliki kemungkinan dalam mengelompokkan data-data yang mirip tersebut.</description>
     </item>
     
     <item>
@@ -229,7 +258,7 @@ Load Packages These are the packages and some set up that we will use.</descript
       <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/one-way-anova-test-in-r/</guid>
-      <description>body { text-align: justify}  Pengantar Latar Belakang Percobaan adalah kegiatan yang dilakukan untuk menguji hipotesis atau menganalisa hubungan sebab akibat antara respon (y) dan prediktor/perlakuan (x). Perancangan percobaan (Design of Experiment) adalah penentuan kerangka dasar (framework) langkah-langkah pengumpulan informasi terhadap objek yang memiliki variasi berdasarkan prinsip-prinsip statistika.
+      <description>body { text-align: justify}PengantarLatar BelakangPercobaan adalah kegiatan yang dilakukan untuk menguji hipotesis atau menganalisa hubungan sebab akibat antara respon (y) dan prediktor/perlakuan (x). Perancangan percobaan (Design of Experiment) adalah penentuan kerangka dasar (framework) langkah-langkah pengumpulan informasi terhadap objek yang memiliki variasi berdasarkan prinsip-prinsip statistika.
 Perencanaan suatu percobaan berguna untuk memperoleh informasi yang relevan dengan tujuan penelitian. Percobaan perlu dirancang untuk memperoleh kesimpulan yang tidak bias (systematic error) dan meningkatkan presisi kesimpulan, sehingga dihasilkan generalisasi populasi yang mendekati nilai sebenarnya.</description>
     </item>
     
@@ -259,7 +288,7 @@ While replicating the plot, we will also learn how to:
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/skincare-recommender-system/</guid>
-      <description>body { text-align: justify}  Have you ever imagine how Netflix give you recommendation for movies you have never watch before? If you’re familiar with machine learning, you can find the answer. Yappps.. that’s right. The answer is “Recommendation System”. Recommendation system or recommender system is subclass of information filtering system that seeks to predict the “rating” or “preference” a user would give to an item. Recommendation system aims to telling us which movies to watch (Netflix), which product to buy (Amazone), or which songs to listen (Spotify) based on our historical data.</description>
+      <description>body {text-align: justify}Have you ever imagine how Netflix give you recommendation for movies you have never watch before?If you’re familiar with machine learning, you can find the answer. Yappps.. that’s right. The answer is “Recommendation System”.Recommendation system or recommender system is subclass of information filtering system that seeks to predict the “rating” or “preference” a user would give to an item. Recommendation system aims to telling us which movies to watch (Netflix), which product to buy (Amazone), or which songs to listen (Spotify) based on our historical data.</description>
     </item>
     
     <item>
@@ -277,7 +306,7 @@ While replicating the plot, we will also learn how to:
       <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/song2vec-music-recommender/</guid>
-      <description>body { text-align: justify}  Background The behavior of musicophiles has changed along with the evolvement of the music industry in the past decades. Previously we conservatively bought music on a compact disc, but now music streaming services are more preferable; such as Amazon Music, Apple Music, Google Play Music, Pandora, Spotify, Youtube Music, to name a few. This is because of the convenience offered by these platforms so that users are able to search their favorite songs right away without having to bother going to the music store physically.</description>
+      <description>body {text-align: justify}BackgroundThe behavior of musicophiles has changed along with the evolvement of the music industry in the past decades. Previously we conservatively bought music on a compact disc, but now music streaming services are more preferable; such as Amazon Music,Apple Music, Google Play Music, Pandora, Spotify, Youtube Music, to name a few. This is because of the convenience offered by these platforms so that users are able to search their favorite songs right away without having to bother going to the music store physically.</description>
     </item>
     
     <item>
@@ -286,9 +315,9 @@ While replicating the plot, we will also learn how to:
       <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/regression-with-panel-data/</guid>
-      <description>body { text-align: justify}  Introduction Panel Regression Panel data are also called longitudinal data or cross-sectional time-series data. A panel data set has multiple entities, each of which has repeated measurements at different time periods. Panel data may have individual (group) effect, time effect, or both, which are analyzed by fixed effect and/or random effect models.1
+      <description>body {text-align: justify}IntroductionPanel RegressionPanel data are also called longitudinal data or cross-sectional time-series data. A panel data set has multiple entities, each of which has repeated measurements at different time periods. Panel data may have individual (group) effect, time effect, or both, which are analyzed by fixed effect and/or random effect models.1
 Panel data examples:
- Annual unemployment rates of each state over several years</description>
+Annual unemployment rates of each state over several years</description>
     </item>
     
     <item>
@@ -306,7 +335,7 @@ Panel data examples:
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/stock-cluster/</guid>
-      <description>body { text-align: justify}  Introduction Saham merupakan satuan nilai atau pembukuan dalam berbagai instrumen finansial yang mengacu pada bagian kepemilikan sebuah perusahaan. Perusahaan yang dapat menjual sahamnya ke publik merupakan saham yang sudah listing di bursa atau sudah melakukan Initial Public Offering (IPO)1. Terdapat sekitar 680 saham per Maret 2020 yang sudah listing di bursa efek Indonesia dan jumlahnya terus bertambah seiring berjalannya waktu. Setiap saham yang melantai dibursa memiliki karakteristik yang berbeda beda baik dari sisi fundamental perusahaan maupun pergerakan harga sahamnya dibursa (teknikal), oleh sebab itu perlu dilakukan pengelompokkan emiten berdasarkan karakteristik dari saham itu sendiri.</description>
+      <description>body {text-align: justify}IntroductionSaham merupakan satuan nilai atau pembukuan dalam berbagai instrumen finansial yang mengacu pada bagian kepemilikan sebuah perusahaan. Perusahaan yang dapat menjual sahamnya ke publik merupakan saham yang sudah listing di bursa atau sudah melakukan Initial Public Offering (IPO)1. Terdapat sekitar 680 saham per Maret 2020 yang sudah listing di bursa efek Indonesia dan jumlahnya terus bertambah seiring berjalannya waktu. Setiap saham yang melantai dibursa memiliki karakteristik yang berbeda beda baik dari sisi fundamental perusahaan maupun pergerakan harga sahamnya dibursa (teknikal), oleh sebab itu perlu dilakukan pengelompokkan emiten berdasarkan karakteristik dari saham itu sendiri.</description>
     </item>
     
     <item>
@@ -315,7 +344,7 @@ Panel data examples:
       <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/time-and-accuracy-improvement-using-pca/</guid>
-      <description>About Dimensionality Reduction If you are familiar enough with data, sometimes you are faced with too many predictor variables that make the computation so heavy. Let us say, you are challenged to predict employee in your company will resign or not while the variables are the level of satisfaction on work, number of project, average monthly hours, time spend at the company, etc. You are facing so many predictor that took so long for training your model.</description>
+      <description>About Dimensionality ReductionIf you are familiar enough with data, sometimes you are faced with too many predictor variables that make the computation so heavy. Let us say, you are challenged to predict employee in your company will resign or not while the variables are the level of satisfaction on work, number of project, average monthly hours, time spend at the company, etc. You are facing so many predictor that took so long for training your model.</description>
     </item>
     
     <item>
@@ -324,8 +353,8 @@ Panel data examples:
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/text-generating-with-markov-chains/</guid>
-      <description>body { text-align: justify}  Introduction Text Generation Natural Language Processing (NLP) is a branch of artificial intelligence that is steadily growing both in terms of research and market values1. The ultimate objective of NLP is to read, decipher, understand, and make sense of the human languages in a manner that is valuable2. The are many applications of NLP in various industries, such as:
- SPAM email detection Sentiment Analysis Text summarization Topic Modelling Text Generation  In this article, we will try to learn the last one: text generation.</description>
+      <description>body {text-align: justify}IntroductionText GenerationNatural Language Processing (NLP) is a branch of artificial intelligence that is steadily growing both in terms of research and market values1. The ultimate objective of NLP is to read, decipher, understand, and make sense of the human languages in a manner that is valuable2. The are many applications of NLP in various industries, such as:
+SPAM email detectionSentiment AnalysisText summarizationTopic ModellingText GenerationIn this article, we will try to learn the last one: text generation.</description>
     </item>
     
     <item>
@@ -334,7 +363,7 @@ Panel data examples:
       <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/text-lime/</guid>
-      <description>body { text-align: justify}  Introduction This article will focus on the implementation of LIME for interpreting text classification, since they are slightly different from common classification problem. We will cover the important points as clearly as possible. More detailed concept of LIME is available at my previous post .
+      <description>body {text-align: justify}IntroductionThis article will focus on the implementation of LIME for interpreting text classification, since they are slightly different from common classification problem. We will cover the important points as clearly as possible. More detailed concept of LIME is available at my previous post .
 One of many things to consider when we want to choose a machine learning model is the interpretability: can we analyze what variables or certain values that contribute toward particular class or target?</description>
     </item>
     
@@ -344,7 +373,7 @@ One of many things to consider when we want to choose a machine learning model i
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/dbscan-clustering/</guid>
-      <description>body { text-align: justify}  1. Pendahuluan 1.1 Clustering  Clustering merupakan salah satu bagian dari unsupervised learning. Clustering memiliki tujuan untuk membagi data ke dalam beberapa kelompok berdasarkan kemiripan antar data. Cluster (kelompok) yang baik adalah cluster yang memiliki kemiripan yang besar antar anggota clusternya dan memiliki perbedaan yang signifikan dengan anggota cluster yang berbeda. Clustering dapat diterapkan dalam berbagai bidang seperti segmentasi pasar, cluster profiling, data spatial dll.</description>
+      <description>body {text-align: justify}1. Pendahuluan1.1 Clustering Clustering merupakan salah satu bagian dari unsupervised learning. Clustering memiliki tujuan untuk membagi data ke dalam beberapa kelompok berdasarkan kemiripan antar data. Cluster (kelompok) yang baik adalah cluster yang memiliki kemiripan yang besar antar anggota clusternya dan memiliki perbedaan yang signifikan dengan anggota cluster yang berbeda. Clustering dapat diterapkan dalam berbagai bidang seperti segmentasi pasar, cluster profiling, data spatial dll.</description>
     </item>
     
     <item>
@@ -353,7 +382,7 @@ One of many things to consider when we want to choose a machine learning model i
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/optimization-with-genetic-algorithm/</guid>
-      <description>Introduction About Optimization is important in many fields, including in data science. In manufacturing, where every decision is critical to the process and the profit of organization, optimization is often employed, from the number of each products produced, how the unit is scheduled for production, get the best or optimal process parameter, and also the routing determination such as the traveling salesman problem. In data science, we are familiar with model tuning, where we tune our model in order to improve the model performance.</description>
+      <description>IntroductionAboutOptimization is important in many fields, including in data science. In manufacturing, where every decision is critical to the process and the profit of organization, optimization is often employed, from the number of each products produced, how the unit is scheduled for production, get the best or optimal process parameter, and also the routing determination such as the traveling salesman problem. In data science, we are familiar with model tuning, where we tune our model in order to improve the model performance.</description>
     </item>
     
     <item>
@@ -460,7 +489,7 @@ Libraries and Setup You will need install the package to do APC analysis if it&a
       <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/twitter-interactions-analysis-using-twinetverse/</guid>
-      <description>Introduction The goal of the twinetverse is to provide everything one might need to view Twitter interactions, from data collection to visualisation. This could be a powerful tool for social media analysis, since it could help visualizing how users communicate with one another on a given topic or how information spreads throughout the Twitter network.</description>
+      <description>IntroductionThe goal of the twinetverse is to provide everything one might need to view Twitter interactions, from data collection to visualisation. This could be a powerful tool for social media analysis, since it could help visualizing how users communicate with one another on a given topic or how information spreads throughout the Twitter network.</description>
     </item>
     
     <item>
@@ -470,8 +499,8 @@ Libraries and Setup You will need install the package to do APC analysis if it&a
       
       <guid>https://algotech.netlify.com/blog/purrr-operly-fitting-multiple-time-series-model/</guid>
       <description>In this article, I will explain some basic functional programming for fitting multiple time series using R, particularly using purrr interface.
- TL;DR: you can find the distraction-free script in here, and read some of my concluding remarks for a quick summary :grin:
- Preface When it comes to time series analyses and forecasting, R users are blessed with an invaluable tools that could helps us to conveniently fit–from basic to advanced–univariate time series models: forecast package.</description>
+TL;DR: you can find the distraction-free script in here, and read some of my concluding remarks for a quick summary :grin:
+PrefaceWhen it comes to time series analyses and forecasting, R users are blessed with an invaluable tools that could helps us to conveniently fit–from basic to advanced–univariate time series models: forecast package.</description>
     </item>
     
     <item>
@@ -490,7 +519,7 @@ The term of tidyverse is actually referring to a set of packages that you’ll f
       <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/textclean/</guid>
-      <description>Take tweet from twitter using rtweet package Function used for take tweet from twitter is search_tweets(). There are several parameter usually used in that function: - Topic : topic you will find at twitter - n : how many tweet that you want to take - include_rts : logical. If FALSE tweet taken didn’t contain retweet - lang : spesified language. If you want take tweet in english you can add argument lang = “en” You can use this code below to try taking tweets from twitter by removing the command</description>
+      <description>Take tweet from twitter using rtweet packageFunction used for take tweet from twitter is search_tweets(). There are several parameter usually used in that function: - Topic : topic you will find at twitter - n : how many tweet that you want to take - include_rts : logical. If FALSE tweet taken didn’t contain retweet - lang : spesified language. If you want take tweet in english you can addargument lang = “en” You can use this code below to try taking tweets from twitter by removing the command</description>
     </item>
     
     <item>
@@ -499,7 +528,7 @@ The term of tidyverse is actually referring to a set of packages that you’ll f
       <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/handling-duplicate-data/</guid>
-      <description>Reading Data and Basic Preprocessing Some data that we obtain from the internet are gained as a raw, means that there are no modifications done to the data except placing it in the right column or row. Even if that’s a good thing, sometimes you have to treat and change the template of the data to be as friendly to reach our objective as possible.
+      <description>Reading Data and Basic PreprocessingSome data that we obtain from the internet are gained as a raw, means that there are no modifications done to the data except placing it in the right column or row. Even if that’s a good thing, sometimes you have to treat and change the template of the data to be as friendly to reach our objective as possible.
 Making sure that there are no duplicated data is one of the aspect of understanding the data itself, because we can’t say that the model that are being made from the information full of duplicated data is relevant enough to be used in real-case scenario.</description>
     </item>
     
@@ -509,7 +538,7 @@ Making sure that there are no duplicated data is one of the aspect of understand
       <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/time-series-prediction-with-lstm/</guid>
-      <description>Time Series Forecasting using LSTM Time series involves data collected sequentially in time. In Feed Forward Neural Network we describe that all inputs are not dependent on each other or are usually familiar as IID (Independent Identical Distributed), so it is not appropriate to use sequential data processing. A Recurrent Neural Network (RNN) deals with sequence problems because their connections form a directed cycle.</description>
+      <description>Time Series Forecasting using LSTMTime series involves data collected sequentially in time. In Feed Forward Neural Network we describe that all inputs are not dependent on each other or are usually familiar as IID (Independent Identical Distributed), so it is not appropriate to use sequential data processing.A Recurrent Neural Network (RNN) deals with sequence problems because their connections form a directed cycle.</description>
     </item>
     
     <item>
@@ -518,7 +547,7 @@ Making sure that there are no duplicated data is one of the aspect of understand
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/metrics-evaluation-using-yardstick/</guid>
-      <description>Motivation Evaluating your machine learning algorithms is important part in your project. Choice of metrics influences how the performance of machine learning algorithms is measured and compared. Metrics evaluation used to measure the performance of our algorithms. For Regression models, we usually use R-squared and MSE, but for Classification models we can use precision, recall and accuracy. Evaluating a classifier is often much more difficult than evaluating a regression algorithm.</description>
+      <description>MotivationEvaluating your machine learning algorithms is important part in your project. Choice of metrics influences how the performance of machine learning algorithms is measured and compared. Metrics evaluation used to measure the performance of our algorithms. For Regression models, we usually use R-squared and MSE, but for Classification models we can use precision, recall and accuracy. Evaluating a classifier is often much more difficult than evaluating a regression algorithm.</description>
     </item>
     
     <item>
@@ -527,9 +556,9 @@ Making sure that there are no duplicated data is one of the aspect of understand
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/nested-dataframe/</guid>
-      <description>1. Setup Libraries and Setup We’ll set-up caching for this notebook given how computationally expensive some of the code we will write can get.
+      <description>1. SetupLibraries and SetupWe’ll set-up caching for this notebook given how computationally expensive some of the code we will write can get.
 You will need to use install.packages() to install any packages that are not already downloaded onto your machine. You then load the package into your workspace using the library() function:
-library(tidyverse) library(caret)   2. Nested Dataframe You’ll learn how to use purrr, caret and dplyr to quickly create some of dataset + model combinations, store data &amp;amp; model objects neatly in one tibble, and post process programatically.</description>
+library(tidyverse)library(caret)2. Nested DataframeYou’ll learn how to use purrr, caret and dplyr to quickly create some of dataset + model combinations, store data &amp;amp; model objects neatly in one tibble, and post process programatically.</description>
     </item>
     
     <item>
@@ -538,7 +567,7 @@ library(tidyverse) library(caret)   2. Nested Dataframe You’ll learn how to us
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/troubleshoot-in-r/</guid>
-      <description>Introduction When you start coding in R you probably get a lot of errors, and trying to decipher an error can be a time-consuming task. You might need to Google or maybe you asked for help to your friends/mentor and they find out you’ve forgot a closing bracket!.
+      <description>IntroductionWhen you start coding in R you probably get a lot of errors, and trying to decipher an error can be a time-consuming task. You might need to Google or maybe you asked for help to your friends/mentor and they find out you’ve forgot a closing bracket!.
 You just learnt about the importance of it just few hours ago, “You’re supposed to know this stuff”. You might be frustrated and blame yourself when you make very basic mistakes, but this is something every one goes through.</description>
     </item>
     
@@ -548,7 +577,7 @@ You just learnt about the importance of it just few hours ago, “You’re suppo
       <pubDate>Tue, 08 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/multiple-seasonal/</guid>
-      <description>Introduction Time Series Analysis describes a set of research problems where our observations are collected at regular time intervals and where we can assume correlations among successive observations. The principal idea is to learn from these past observations any inherent structures or patterns within the data, with the objective of generating future values for the series. Time series may contain multiple seasonal cycles of different lengths. A fundamental goal for multiple seasonal (MS) processes is to allow for the seasonal terms that represent a seasonal cycle to be updated more than once during the period of the cycle.</description>
+      <description>IntroductionTime Series Analysis describes a set of research problems where our observations are collected at regular time intervals and where we can assume correlations among successive observations. The principal idea is to learn from these past observations any inherent structures or patterns within the data, with the objective of generating future values for the series. Time series may contain multiple seasonal cycles of different lengths. A fundamental goal for multiple seasonal (MS) processes is to allow for the seasonal terms that represent a seasonal cycle to be updated more than once during the period of the cycle.</description>
     </item>
     
     <item>

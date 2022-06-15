@@ -3,24 +3,60 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://algotech.netlify.com/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/blog/</loc>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/categories/</loc>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/tags/leaflet/</loc>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/tags/machine-learning/</loc>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/tags/map/</loc>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/tags/mapshaper/</loc>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/blog/regresi-terboboti-geografis/</loc>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/blog/regresi-terboboti-geografis/</loc>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/categories/r/</loc>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/tags/regression/</loc>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/tags/spatial-analysis/</loc>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/tags/</loc>
+    <lastmod>2021-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/tags/anomaly-detection/</loc>
+    <lastmod>2021-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/blog/local-outlier-factor-with-r/</loc>
+    <lastmod>2021-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/tags/outlier-detection/</loc>
+    <lastmod>2021-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://algotech.netlify.com/tags/unsupervised-machine-learning/</loc>
+    <lastmod>2021-10-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://algotech.netlify.com/tags/arimax/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://algotech.netlify.com/blog/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://algotech.netlify.com/categories/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://algotech.netlify.com/categories/r/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://algotech.netlify.com/blog/regression-arima-arimax/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://algotech.netlify.com/tags/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://algotech.netlify.com/tags/time-series/</loc>
@@ -63,9 +99,6 @@
     <lastmod>2021-05-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://algotech.netlify.com/blog/gridsearchcv/</loc>
-    <lastmod>2021-05-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://algotech.netlify.com/tags/machine-learning/</loc>
     <lastmod>2021-05-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://algotech.netlify.com/categories/python/</loc>
@@ -305,9 +338,6 @@
     <loc>https://algotech.netlify.com/tags/overfitting/</loc>
     <lastmod>2019-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://algotech.netlify.com/tags/regression/</loc>
-    <lastmod>2019-12-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://algotech.netlify.com/tags/regularization/</loc>
     <lastmod>2019-12-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -348,15 +378,6 @@
     <lastmod>2019-08-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://algotech.netlify.com/tags/geocoding/</loc>
-    <lastmod>2019-08-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://algotech.netlify.com/tags/leaflet/</loc>
-    <lastmod>2019-08-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://algotech.netlify.com/tags/map/</loc>
-    <lastmod>2019-08-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://algotech.netlify.com/tags/mapshaper/</loc>
     <lastmod>2019-08-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://algotech.netlify.com/blog/self-organizing-maps/</loc>

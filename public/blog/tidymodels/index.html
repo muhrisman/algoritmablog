@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -648,6 +648,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -665,42 +701,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -940,12 +940,12 @@ in_train <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sa
 
 <span style="color:#75715e"># check target distribution in train</span>
 <span style="color:#a6e22e">prop.table</span>(<span style="color:#a6e22e">table</span>(attrition<span style="color:#f92672">$</span>attrition[in_train]))
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt;        no       yes 
 #&gt; 0.8367347 0.1632653
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># check target distribution in test</span>
 <span style="color:#a6e22e">prop.table</span>(<span style="color:#a6e22e">table</span>(attrition<span style="color:#f92672">$</span>attrition[<span style="color:#f92672">-</span>in_train]))
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt;        no       yes 
 #&gt; 0.8469388 0.1530612
 </code></pre><h3 id="numeric-scaling">Numeric scaling</h3>
@@ -954,28 +954,28 @@ age_scaled <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">
 
 <span style="color:#75715e"># check mean and standard deviation</span>
 <span style="color:#a6e22e">attr</span>(age_scaled, <span style="color:#e6db74">&#34;scaled:center&#34;</span>)
-</code></pre></div><pre><code>#&gt; [1] 36.92381
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 36.92381
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">attr</span>(age_scaled, <span style="color:#e6db74">&#34;scaled:scale&#34;</span>)
-</code></pre></div><pre><code>#&gt; [1] 9.135373
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 9.135373
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># scale age in train dataset</span>
 age_train_scaled <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">scale</span>(attrition<span style="color:#f92672">$</span>age[in_train])
 
 <span style="color:#75715e"># check mean and standard deviation</span>
 <span style="color:#a6e22e">attr</span>(age_train_scaled, <span style="color:#e6db74">&#34;scaled:center&#34;</span>)
-</code></pre></div><pre><code>#&gt; [1] 37.0085
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 37.0085
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">attr</span>(age_train_scaled, <span style="color:#e6db74">&#34;scaled:scale&#34;</span>)
-</code></pre></div><pre><code>#&gt; [1] 9.070969
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 9.070969
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># scale age in test dataset</span>
 age_test_scaled <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">scale</span>(attrition<span style="color:#f92672">$</span>age[<span style="color:#f92672">-</span>in_train])
 
 <span style="color:#75715e"># check mean and standard deviation</span>
 <span style="color:#a6e22e">attr</span>(age_test_scaled, <span style="color:#e6db74">&#34;scaled:center&#34;</span>)
-</code></pre></div><pre><code>#&gt; [1] 36.58503
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 36.58503
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">attr</span>(age_test_scaled, <span style="color:#e6db74">&#34;scaled:scale&#34;</span>)
-</code></pre></div><pre><code>#&gt; [1] 9.396712
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 9.396712
 </code></pre><h2 id="things-we-never-think-we-could-do-it-better">Things we never think we could do it better</h2>
 <h3 id="how-we-see-model-performance">How we see model performance</h3>
-<pre><code>#&gt; Confusion Matrix and Statistics
+<pre tabindex="0"><code>#&gt; Confusion Matrix and Statistics
 #&gt; 
 #&gt;           Reference
 #&gt; Prediction   no  yes
@@ -1025,7 +1025,7 @@ splitted <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">in
 
 <span style="color:#75715e"># check train dataset</span>
 <span style="color:#a6e22e">training</span>(splitted)
-</code></pre></div><pre><code>#&gt; # A tibble: 1,177 x 35
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 1,177 x 35
 #&gt;    attrition   age business_travel daily_rate department distance_from_h~
 #&gt;    &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;                &lt;dbl&gt; &lt;chr&gt;                 &lt;dbl&gt;
 #&gt;  1 yes          41 travel_rarely         1102 sales                     1
@@ -1052,7 +1052,7 @@ splitted <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">in
 #&gt; #   years_since_last_promotion &lt;dbl&gt;, years_with_curr_manager &lt;dbl&gt;
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># check test dataset</span>
 <span style="color:#a6e22e">testing</span>(splitted)
-</code></pre></div><pre><code>#&gt; # A tibble: 293 x 35
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 293 x 35
 #&gt;    attrition   age business_travel daily_rate department distance_from_h~
 #&gt;    &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;                &lt;dbl&gt; &lt;chr&gt;                 &lt;dbl&gt;
 #&gt;  1 no           29 travel_rarely         1389 research_~               21
@@ -1081,17 +1081,17 @@ splitted <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">in
 <p>But sometimes, simple random sampling is not enough:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># target distribution in full dataset</span>
 <span style="color:#a6e22e">prop.table</span>(<span style="color:#a6e22e">table</span>(attrition<span style="color:#f92672">$</span>attrition))
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt;        no       yes 
 #&gt; 0.8387755 0.1612245
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># target distribution in train dataset</span>
 <span style="color:#a6e22e">prop.table</span>(<span style="color:#a6e22e">table</span>(<span style="color:#a6e22e">training</span>(splitted)<span style="color:#f92672">$</span>attrition))
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt;        no       yes 
 #&gt; 0.8462192 0.1537808
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># target distribution in test dataset</span>
 <span style="color:#a6e22e">prop.table</span>(<span style="color:#a6e22e">table</span>(<span style="color:#a6e22e">testing</span>(splitted)<span style="color:#f92672">$</span>attrition))
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt;        no       yes 
 #&gt; 0.8088737 0.1911263
 </code></pre><p>This is where we need <code>strata</code> argument to use stratified random sampling:</p>
@@ -1103,17 +1103,17 @@ splitted <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">in
 
 <span style="color:#75715e"># target distribution in full dataset</span>
 <span style="color:#a6e22e">prop.table</span>(<span style="color:#a6e22e">table</span>(attrition<span style="color:#f92672">$</span>attrition))
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt;        no       yes 
 #&gt; 0.8387755 0.1612245
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># target distribution in train dataset</span>
 <span style="color:#a6e22e">prop.table</span>(<span style="color:#a6e22e">table</span>(<span style="color:#a6e22e">training</span>(splitted)<span style="color:#f92672">$</span>attrition))
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt;        no       yes 
 #&gt; 0.8385726 0.1614274
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># target distribution in test dataset</span>
 <span style="color:#a6e22e">prop.table</span>(<span style="color:#a6e22e">table</span>(<span style="color:#a6e22e">testing</span>(splitted)<span style="color:#f92672">$</span>attrition))
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt;        no       yes 
 #&gt; 0.8395904 0.1604096
 </code></pre><h3 id="cross-sectional-resampling">Cross-sectional resampling</h3>
@@ -1126,7 +1126,7 @@ resampled <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">v
 
 <span style="color:#75715e"># quick check</span>
 resampled
-</code></pre></div><pre><code>#&gt; #  3-fold cross-validation repeated 2 times using stratification 
+</code></pre></div><pre tabindex="0"><code>#&gt; #  3-fold cross-validation repeated 2 times using stratification 
 #&gt; # A tibble: 6 x 3
 #&gt;   splits            id      id2  
 #&gt;   &lt;named list&gt;      &lt;chr&gt;   &lt;chr&gt;
@@ -1139,7 +1139,7 @@ resampled
 </code></pre><p>Each train and test dataset are stored in <code>splits</code> column. We could use <code>analysis()</code> and <code>assessment()</code> to get the train and test dataset, consecutively:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># check train dataset on an example split</span>
 <span style="color:#a6e22e">analysis</span>(resampled<span style="color:#f92672">$</span>splits[[1]])
-</code></pre></div><pre><code>#&gt; # A tibble: 980 x 35
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 980 x 35
 #&gt;    attrition   age business_travel daily_rate department distance_from_h~
 #&gt;    &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;                &lt;dbl&gt; &lt;chr&gt;                 &lt;dbl&gt;
 #&gt;  1 no           49 travel_frequen~        279 research_~                8
@@ -1166,7 +1166,7 @@ resampled
 #&gt; #   years_since_last_promotion &lt;dbl&gt;, years_with_curr_manager &lt;dbl&gt;
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># check test dataset on an example split</span>
 <span style="color:#a6e22e">assessment</span>(resampled<span style="color:#f92672">$</span>splits[[1]])
-</code></pre></div><pre><code>#&gt; # A tibble: 490 x 35
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 490 x 35
 #&gt;    attrition   age business_travel daily_rate department distance_from_h~
 #&gt;    &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;                &lt;dbl&gt; &lt;chr&gt;                 &lt;dbl&gt;
 #&gt;  1 yes          41 travel_rarely         1102 sales                     1
@@ -1246,7 +1246,7 @@ rec <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">recipe<
 
 <span style="color:#75715e"># quick check</span>
 rec
-</code></pre></div><pre><code>#&gt; Data Recipe
+</code></pre></div><pre tabindex="0"><code>#&gt; Data Recipe
 #&gt; 
 #&gt; Inputs:
 #&gt; 
@@ -1283,7 +1283,7 @@ data_train <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">
 
 <span style="color:#75715e"># quick check</span>
 data_train
-</code></pre></div><pre><code>#&gt; # A tibble: 380 x 22
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 380 x 22
 #&gt;    business_travel department education_field gender job_role
 #&gt;    &lt;fct&gt;           &lt;fct&gt;      &lt;fct&gt;           &lt;fct&gt;  &lt;fct&gt;   
 #&gt;  1 travel_rarely   sales      life_sciences   female sales_e~
@@ -1305,7 +1305,7 @@ data_test <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">b
 
 <span style="color:#75715e"># quick check</span>
 data_test
-</code></pre></div><pre><code>#&gt; # A tibble: 293 x 22
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 293 x 22
 #&gt;    attrition business_travel department education_field gender job_role
 #&gt;    &lt;fct&gt;     &lt;fct&gt;           &lt;fct&gt;      &lt;fct&gt;           &lt;fct&gt;  &lt;fct&gt;   
 #&gt;  1 no        travel_rarely   research_~ life_sciences   female manufac~
@@ -1355,7 +1355,7 @@ model_engine <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e
 
 <span style="color:#75715e"># quick check</span>
 model_engine
-</code></pre></div><pre><code>#&gt; Random Forest Model Specification (classification)
+</code></pre></div><pre tabindex="0"><code>#&gt; Random Forest Model Specification (classification)
 #&gt; 
 #&gt; Main Arguments:
 #&gt;   mtry = ncol(data_train) - 2
@@ -1379,7 +1379,7 @@ model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fit</
 
 <span style="color:#75715e"># quick check</span>
 model
-</code></pre></div><pre><code>#&gt; parsnip model object
+</code></pre></div><pre tabindex="0"><code>#&gt; parsnip model object
 #&gt; 
 #&gt; 
 #&gt; Call:
@@ -1403,7 +1403,7 @@ model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fit_x
 
 <span style="color:#75715e"># quick check</span>
 model
-</code></pre></div><pre><code>#&gt; parsnip model object
+</code></pre></div><pre tabindex="0"><code>#&gt; parsnip model object
 #&gt; 
 #&gt; 
 #&gt; Call:
@@ -1430,7 +1430,7 @@ model_engine <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e
 
 <span style="color:#75715e"># quick check</span>
 model_engine
-</code></pre></div><pre><code>#&gt; Random Forest Model Specification (classification)
+</code></pre></div><pre tabindex="0"><code>#&gt; Random Forest Model Specification (classification)
 #&gt; 
 #&gt; Main Arguments:
 #&gt;   mtry = ncol(data_train) - 2
@@ -1453,7 +1453,7 @@ model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fit</
 
 <span style="color:#75715e"># quick check</span>
 model
-</code></pre></div><pre><code>#&gt; parsnip model object
+</code></pre></div><pre tabindex="0"><code>#&gt; parsnip model object
 #&gt; 
 #&gt; Ranger result
 #&gt; 
@@ -1479,7 +1479,7 @@ model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fit_x
 
 <span style="color:#75715e"># quick check</span>
 model
-</code></pre></div><pre><code>#&gt; parsnip model object
+</code></pre></div><pre tabindex="0"><code>#&gt; parsnip model object
 #&gt; 
 #&gt; Ranger result
 #&gt; 
@@ -1505,7 +1505,7 @@ predicted <span style="color:#f92672">&lt;-</span> data_test <span style="color:
 <span style="color:#75715e"># quick check</span>
 predicted <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">select</span>(attrition, <span style="color:#a6e22e">matches</span>(<span style="color:#e6db74">&#34;.pred&#34;</span>))
-</code></pre></div><pre><code>#&gt; # A tibble: 293 x 4
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 293 x 4
 #&gt;    attrition .pred_class .pred_yes .pred_no
 #&gt;    &lt;fct&gt;     &lt;fct&gt;           &lt;dbl&gt;    &lt;dbl&gt;
 #&gt;  1 no        no             0.340     0.660
@@ -1542,7 +1542,7 @@ predicted <span style="color:#f92672">%&gt;%</span>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># calculate accuracy</span>
 predicted <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">accuracy</span>(attrition, .pred_class)
-</code></pre></div><pre><code>#&gt; # A tibble: 1 x 3
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 1 x 3
 #&gt;   .metric  .estimator .estimate
 #&gt;   &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;
 #&gt; 1 accuracy binary         0.710
@@ -1551,7 +1551,7 @@ predicted <span style="color:#f92672">%&gt;%</span>
   <span style="color:#a6e22e">group_by</span>(department) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">accuracy</span>(attrition, .pred_class) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">ungroup</span>()
-</code></pre></div><pre><code>#&gt; # A tibble: 3 x 4
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 3 x 4
 #&gt;   department           .metric  .estimator .estimate
 #&gt;   &lt;fct&gt;                &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;
 #&gt; 1 human_resources      accuracy binary         0.636
@@ -1566,7 +1566,7 @@ predicted <span style="color:#f92672">%&gt;%</span>
     specificity <span style="color:#f92672">=</span> <span style="color:#a6e22e">spec_vec</span>(attrition, .pred_class),
     precision <span style="color:#f92672">=</span> <span style="color:#a6e22e">precision_vec</span>(attrition, .pred_class)
   )
-</code></pre></div><pre><code>#&gt; # A tibble: 1 x 4
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 1 x 4
 #&gt;   accuracy sensitivity specificity precision
 #&gt;      &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;     &lt;dbl&gt;
 #&gt; 1    0.710       0.723       0.707     0.321
@@ -1580,7 +1580,7 @@ predicted <span style="color:#f92672">%&gt;%</span>
     precision <span style="color:#f92672">=</span> <span style="color:#a6e22e">precision_vec</span>(attrition, .pred_class)
   ) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">ungroup</span>()
-</code></pre></div><pre><code>#&gt; # A tibble: 3 x 5
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 3 x 5
 #&gt;   department           accuracy sensitivity specificity precision
 #&gt;   &lt;fct&gt;                   &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;     &lt;dbl&gt;
 #&gt; 1 human_resources         0.636       1           0.556     0.333
@@ -1598,7 +1598,7 @@ pred_test_roc <span style="color:#f92672">&lt;-</span> predicted <span style="co
 
 <span style="color:#75715e"># quick check</span>
 pred_test_roc
-</code></pre></div><pre><code>#&gt; # A tibble: 295 x 3
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 295 x 3
 #&gt;    .threshold specificity sensitivity
 #&gt;         &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;
 #&gt;  1  -Inf          0                 1

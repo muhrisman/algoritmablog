@@ -13,7 +13,7 @@
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://algotech.netlify.com/blog/hotel-forecast/</guid>
-      <description>body { text-align: justify}  Background   Hospitality industry is growing, with more and more people spending their money for vacation and leisure activities. People may only lodge into a hotel when it’s a holiday season or a special event, thus the demand for staying room is not equally distributed accross the year. To maximize the revenue gained by the hotel, the management often employed a pricing strategy, one of them being raising the room rate when the demand is high and making a promo when the demand is low.</description>
+      <description>body {text-align: justify}BackgroundHospitality industry is growing, with more and more people spending their money for vacation and leisure activities. People may only lodge into a hotel when it’s a holiday season or a special event, thus the demand for staying room is not equally distributed accross the year. To maximize the revenue gained by the hotel, the management often employed a pricing strategy, one of them being raising the room rate when the demand is high and making a promo when the demand is low.</description>
     </item>
     
     <item>
@@ -23,8 +23,8 @@
       
       <guid>https://algotech.netlify.com/blog/purrr-operly-fitting-multiple-time-series-model/</guid>
       <description>In this article, I will explain some basic functional programming for fitting multiple time series using R, particularly using purrr interface.
- TL;DR: you can find the distraction-free script in here, and read some of my concluding remarks for a quick summary :grin:
- Preface When it comes to time series analyses and forecasting, R users are blessed with an invaluable tools that could helps us to conveniently fit–from basic to advanced–univariate time series models: forecast package.</description>
+TL;DR: you can find the distraction-free script in here, and read some of my concluding remarks for a quick summary :grin:
+PrefaceWhen it comes to time series analyses and forecasting, R users are blessed with an invaluable tools that could helps us to conveniently fit–from basic to advanced–univariate time series models: forecast package.</description>
     </item>
     
   </channel>

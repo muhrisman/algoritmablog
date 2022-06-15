@@ -253,7 +253,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.87.0" />
+        <meta name="generator" content="Hugo 0.88.1" />
         
   
     
@@ -648,6 +648,42 @@ if (!doNotTrack) {
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/regresi-terboboti-geografis/">Pendekatan Regresi Terboboti Spasial untuk Analisa Tingkat Kriminalitas di Pulau Jawa</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-19'>
+                                    October 19, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://algotech.netlify.com/blog/local-outlier-factor-with-r/">Introduction to Local Outlier Factor with R</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-10-14'>
+                                    October 14, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://algotech.netlify.com/blog/regression-arima-arimax/">Regression ARIMA (ARIMAX)</a></h3>
                                 
                                 <time class="published" datetime=
@@ -665,42 +701,6 @@ if (!doNotTrack) {
                                 <time class="published" datetime=
                                     '2021-07-30'>
                                     July 30, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/advancing-your-shinyapp-ii/">Advancing Your Shiny Application II</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-06-03'>
-                                    June 3, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/gridsearchcv/">GridSearchCV</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-22'>
-                                    May 22, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://algotech.netlify.com/blog/kemiripan-teks/">Pengenalan Kemiripan Teks (Text Similarity) di Python</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-20'>
-                                    May 20, 2021</time>
                             </header>
                             
 
@@ -942,7 +942,7 @@ $$</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Toss a single coin</span>
 <span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">123</span>)
 <span style="color:#a6e22e">sample</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Head&#34;</span>, <span style="color:#e6db74">&#34;Tail&#34;</span>), <span style="color:#ae81ff">1</span>)
-</code></pre></div><pre><code>#&gt; [1] &quot;Head&quot;
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] &quot;Head&quot;
 </code></pre><p>Now we try to toss the coin 10 times and see the result. We can measure the probability by calculating how many head that we got in 10 trials. For this trials, we get the probability of head to be <strong>0.6</strong>. That&rsquo;s quite far from the theoretical probability that is 0.5. This is because the number of trials is to small. Let&rsquo;s try with the bigger one.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Sampling</span>
 <span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">123</span>)
@@ -986,7 +986,7 @@ flip_coin <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">s
 
 <span style="color:#75715e"># The probability</span>
 <span style="color:#a6e22e">prop.table</span>(<span style="color:#a6e22e">table</span>(<span style="color:#e6db74">&#34;10,000 Coin Flipping&#34;</span> <span style="color:#f92672">=</span> flip_coin))
-</code></pre></div><pre><code>#&gt; 10,000 Coin Flipping
+</code></pre></div><pre tabindex="0"><code>#&gt; 10,000 Coin Flipping
 #&gt;   Head   Tail 
 #&gt; 0.5017 0.4983
 </code></pre><p>With 10,000 random coin flipping, the probability is getting very close to the theoretical one but still not close enough. We can try to simulate more coin flipping with 1,000,000.</p>
@@ -996,7 +996,7 @@ flip_coin <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">s
 
 <span style="color:#75715e"># The probability</span>
 <span style="color:#a6e22e">prop.table</span>(<span style="color:#a6e22e">table</span>(<span style="color:#e6db74">&#34;1,000,000 Coin Flipping&#34;</span> <span style="color:#f92672">=</span> flip_coin))
-</code></pre></div><pre><code>#&gt; 1,000,000 Coin Flipping
+</code></pre></div><pre tabindex="0"><code>#&gt; 1,000,000 Coin Flipping
 #&gt;     Head     Tail 
 #&gt; 0.500304 0.499696
 </code></pre><p>To get very close to the theoretical probability, one must repeat the same experiment in infinite number of trials. The problem is, not all event or experiment can be done in such amount of trials. Some event may only happened once or it would be very hard to do experiment with plenty amount of trials due to limited resources. How do we measure the probability of a candidate would win the presidential election? We can&rsquo;t repeat the same election twice. What is the probability it will rain tomorrow? Or what if you come home and found out that your laptop is missing with your house back door opened. What is the probability of you getting robbed? Also, the probability 0.5 derived from getting 2 head from 4 trials and the probability from getting 500 head from 10 trials will give you different impression. You will be more likely to trust the later one.</p>
@@ -1084,7 +1084,7 @@ p_positive <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">
 p_positive_covid <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">450</span><span style="color:#f92672">/</span><span style="color:#ae81ff">500</span>
 
 p_covid <span style="color:#f92672">*</span> p_positive_covid <span style="color:#f92672">/</span> p_positive
-</code></pre></div><pre><code>#&gt; [1] 0.2307692
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 0.2307692
 </code></pre><p>$$
 P(Covid|Test\ Positive) = \frac{0.05\times 0.9}{0.195} = 0.2307\<br>
 $$</p>
@@ -1164,7 +1164,7 @@ $$</p>
 </ul>
 <p>We can generate the probability distribution directly using <code>dbinom()</code>. For example, if we want to get the probability of landing 5 head from 10 trials if probability of getting a head is 0.5 is as follows.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">dbinom</span>(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">0.5</span>)
-</code></pre></div><pre><code>#&gt; [1] 0.2460938
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 0.2460938
 </code></pre><p>We can visualize the probability for each event.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">fun_binom <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(x) <span style="color:#a6e22e">dbinom</span>(x, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, prob <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>)
 
@@ -1255,7 +1255,7 @@ $$</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">result <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;tail&#34;</span>, <span style="color:#e6db74">&#34;head&#34;</span>, <span style="color:#e6db74">&#34;head&#34;</span>, <span style="color:#e6db74">&#34;tail&#34;</span>, <span style="color:#e6db74">&#34;head&#34;</span>, <span style="color:#e6db74">&#34;head&#34;</span>, <span style="color:#e6db74">&#34;tail&#34;</span>, <span style="color:#e6db74">&#34;head&#34;</span>, <span style="color:#e6db74">&#34;head&#34;</span>, <span style="color:#e6db74">&#34;head&#34;</span>)
 
 <span style="color:#a6e22e">table</span>(result)
-</code></pre></div><pre><code>#&gt; result
+</code></pre></div><pre tabindex="0"><code>#&gt; result
 #&gt; head tail 
 #&gt;    7    3
 </code></pre><p>Let&rsquo;s visualize the likelihood of us seeing 10 trials with 7 head and 3 tails given our belief of the probability of getting a head. Given our parameter of <code>p</code> (probability of landing a head), how likely it is to get  head and 3 tails?</p>
@@ -1318,9 +1318,9 @@ $$</p>
 sample_post <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rbeta</span>(n <span style="color:#f92672">=</span> n_trial, <span style="color:#ae81ff">3+7</span>, <span style="color:#ae81ff">3+3</span>)
 </code></pre></div><p>Bayesian loves to work with distribution instead of a single point value. To summarize our posterior distribution, we will use something called <code>Credibility Interval</code>. A credibility interval is a lower and upper bound of values describing a range of high probability, usually 95%, 99%, or 90%. The choice of the percentage is arbitrary and there is no set of rule for it. Most of the time it is just a consensus. In the following example, 95% credibility interval is just our way of saying that there is 95% chance that probability of landing a head is between 0.383 and 0.836.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;95% Credibility Interval of the Posterior Probability\n&#34;</span>)
-</code></pre></div><pre><code>#&gt; 95% Credibility Interval of the Posterior Probability
+</code></pre></div><pre tabindex="0"><code>#&gt; 95% Credibility Interval of the Posterior Probability
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">quantile</span>(sample_post, probs <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.025</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.975</span>))
-</code></pre></div><pre><code>#&gt;      2.5%       50%     97.5% 
+</code></pre></div><pre tabindex="0"><code>#&gt;      2.5%       50%     97.5% 
 #&gt; 0.3834289 0.6304564 0.8365127
 </code></pre><p><code>Credibility Intervals</code> is different from the frequentist approach of <code>Confidence Intervals</code>.</p>
 <p>Let&rsquo;s visualize the posterior distribution with the 95% credibility interval from the noninformative prior <code>Beta(1,1)</code>.</p>
@@ -1400,7 +1400,7 @@ sample_b3 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">r
       <span style="color:#a6e22e">as.data.frame</span>()
   ) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">setNames</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Beta(8,4)&#34;</span>, <span style="color:#e6db74">&#34;Beta(10, 6)&#34;</span>, <span style="color:#e6db74">&#34;Beta(57, 53)&#34;</span>))
-</code></pre></div><pre><code>#&gt;       Beta(8,4) Beta(10, 6) Beta(57, 53)
+</code></pre></div><pre tabindex="0"><code>#&gt;       Beta(8,4) Beta(10, 6) Beta(57, 53)
 #&gt; 2.5%  0.3897559   0.3836042    0.3836042
 #&gt; 50%   0.6763476   0.6304491    0.6304491
 #&gt; 97.5% 0.8908559   0.8369329    0.8369329
@@ -1440,7 +1440,7 @@ fun_beta3 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">f
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">data_ab <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;data_input/ab_data.csv&#34;</span>)
 
 <span style="color:#a6e22e">glimpse</span>(data_ab)
-</code></pre></div><pre><code>#&gt; Rows: 294,478
+</code></pre></div><pre tabindex="0"><code>#&gt; Rows: 294,478
 #&gt; Columns: 5
 #&gt; $ user_id      &lt;int&gt; 851104, 804228, 661590, 853541, 864975, 936923, 679687...
 #&gt; $ timestamp    &lt;chr&gt; &quot;2017-01-21 22:11:48.556739&quot;, &quot;2017-01-12 08:01:45.159...
@@ -1467,7 +1467,7 @@ fun_beta3 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">f
   <span style="color:#a6e22e">mutate_if</span>(is.character, as.factor)
 
 <span style="color:#a6e22e">summary</span>(data_ab)
-</code></pre></div><pre><code>#&gt;     user_id         timestamp                         group       
+</code></pre></div><pre tabindex="0"><code>#&gt;     user_id         timestamp                         group       
 #&gt;  Min.   :630000   Min.   :2017-01-02 13:42:05   control  :147202  
 #&gt;  1st Qu.:709032   1st Qu.:2017-01-08 02:06:48   treatment:147276  
 #&gt;  Median :787934   Median :2017-01-13 13:21:07                     
@@ -1485,7 +1485,7 @@ fun_beta3 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">f
 #&gt;                                                     Sat:40185
 </code></pre><p>Let&rsquo;s check the frequency of each control group and the landing page presented. The user who belong to <code>control</code> group should get the <code>old page</code> landing page while the <code>treatment</code> group should get the <code>new page</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">table</span>(<span style="color:#e6db74">&#34;Landing Page&#34;</span> <span style="color:#f92672">=</span> data_ab<span style="color:#f92672">$</span>landing_page, <span style="color:#e6db74">&#34;Group&#34;</span> <span style="color:#f92672">=</span> data_ab<span style="color:#f92672">$</span>group)
-</code></pre></div><pre><code>#&gt;             Group
+</code></pre></div><pre tabindex="0"><code>#&gt;             Group
 #&gt; Landing Page control treatment
 #&gt;     New Page    1928    145311
 #&gt;     Old Page  145274      1965
@@ -1498,14 +1498,14 @@ fun_beta3 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">f
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">data_ab <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">is.na</span>() <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">colSums</span>()
-</code></pre></div><pre><code>#&gt;      user_id    timestamp        group landing_page    converted         hour 
+</code></pre></div><pre tabindex="0"><code>#&gt;      user_id    timestamp        group landing_page    converted         hour 
 #&gt;            0            0            0            0            0            0 
 #&gt;          day 
 #&gt;            0
 </code></pre><h3 id="exploratory-data-analysis">Exploratory Data Analysis</h3>
 <p>Check how many number of users in each group to see if the group is balanced.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">table</span>(<span style="color:#e6db74">&#34;Group&#34;</span> <span style="color:#f92672">=</span> data_ab<span style="color:#f92672">$</span>group)
-</code></pre></div><pre><code>#&gt; Group
+</code></pre></div><pre tabindex="0"><code>#&gt; Group
 #&gt;   control treatment 
 #&gt;    145274    145311
 </code></pre><p>Let&rsquo;s check the conversion rate by hour and weekdays to see if there are any specific time where the conversion rate increase.</p>
@@ -1551,7 +1551,7 @@ variant_b <span style="color:#f92672">&lt;-</span> data_ab <span style="color:#f
             )
 
 data_agg
-</code></pre></div><pre><code>#&gt; # A tibble: 2 x 6
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 2 x 6
 #&gt; # Groups:   group [2]
 #&gt;   group     landing_page total_visit conversion not_converted conversion_rate
 #&gt;   &lt;fct&gt;     &lt;fct&gt;              &lt;int&gt;      &lt;int&gt;         &lt;int&gt;           &lt;dbl&gt;
@@ -1595,33 +1595,33 @@ sample_old <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">
 sample_new <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rbeta</span>(n <span style="color:#f92672">=</span> n_trial, prior_alpha <span style="color:#f92672">+</span> data_agg<span style="color:#f92672">$</span>conversion[2], prior_beta <span style="color:#f92672">+</span> data_agg<span style="color:#f92672">$</span>not_converted[2])
 
 <span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;Posterior Probability Distribution of Variant A (Old Page)\n&#34;</span>)
-</code></pre></div><pre><code>#&gt; Posterior Probability Distribution of Variant A (Old Page)
+</code></pre></div><pre tabindex="0"><code>#&gt; Posterior Probability Distribution of Variant A (Old Page)
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">quantile</span>(sample_old)
-</code></pre></div><pre><code>#&gt;        0%       25%       50%       75%      100% 
+</code></pre></div><pre tabindex="0"><code>#&gt;        0%       25%       50%       75%      100% 
 #&gt; 0.1162741 0.1198146 0.1203893 0.1209656 0.1246456
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;\nPosterior Probability Distribution of Variant B (New Page)\n&#34;</span>)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; Posterior Probability Distribution of Variant B (New Page)
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">quantile</span>(sample_new)
-</code></pre></div><pre><code>#&gt;        0%       25%       50%       75%      100% 
+</code></pre></div><pre tabindex="0"><code>#&gt;        0%       25%       50%       75%      100% 
 #&gt; 0.1147905 0.1182400 0.1188111 0.1193842 0.1228733
 </code></pre><p>It is better to present the parameter as a probability distribution rather than a single value because by then, you can determine the credible interval or the most likely range of value of the conversion rate. The 90% credible interval for variant A can be interpreted as <em>90% of all possible values of conversion rate are located between 11.89% and 12.18%</em> while for variant B it is somewhere between 11.74% and 12.02%.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;90% Credible Interval of Variant A (Old Page)\n&#34;</span>)
-</code></pre></div><pre><code>#&gt; 90% Credible Interval of Variant A (Old Page)
+</code></pre></div><pre tabindex="0"><code>#&gt; 90% Credible Interval of Variant A (Old Page)
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">quantile</span>(sample_old, probs <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.05</span>, <span style="color:#ae81ff">0.95</span>))
-</code></pre></div><pre><code>#&gt;        5%       95% 
+</code></pre></div><pre tabindex="0"><code>#&gt;        5%       95% 
 #&gt; 0.1189921 0.1217993
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;\n90% Credible Interval of Variant B (New Page)\n&#34;</span>)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; 90% Credible Interval of Variant B (New Page)
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">quantile</span>(sample_new, probs <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.05</span>, <span style="color:#ae81ff">0.95</span>))
-</code></pre></div><pre><code>#&gt;        5%       95% 
+</code></pre></div><pre tabindex="0"><code>#&gt;        5%       95% 
 #&gt; 0.1174202 0.1202123
 </code></pre><h5 id="improvement">Improvement</h5>
 <p>To see how many times variant A produce better conversion rate than B, we can use the ratio between the total number of variant A beat variant B divided by the number of trials. This value is equivalent with the <em>p-value</em> that you may have encounter when using the NHST method. However, this value is easier to interpret and pretty intuitive compared to p-value, which mostly has been misunderstood.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">p_a_superior <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>(sample_old <span style="color:#f92672">&gt;</span> sample_new) <span style="color:#f92672">/</span> n_trial
 p_a_superior
-</code></pre></div><pre><code>#&gt; [1] 0.905237
+</code></pre></div><pre tabindex="0"><code>#&gt; [1] 0.905237
 </code></pre><p>What we see here is that in 90 percent of the 1,000,000 trials, variant A was superior. We can imagine this as looking at 1,000,000 possible worlds. Based on the distribution of possible conversion rates for each variant, in 90 percent of the worlds variant A was the better of the two. This result shows that we have a pretty strong belief based on our prior belief and the observed data that the old variant or the old landing page is the better variant. It turns out that variant B is no better than our old variant A.</p>
 <p>We can calculate how much better variant A compared to the variant B in terms of the percent of improvement. Is variant A 20% better? Or is it 10% better? To answer such question, we can use the following formula:</p>
 <p>$$
@@ -1662,9 +1662,9 @@ df_diff <span style="color:#f92672">%&gt;%</span>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Credible Interval</span>
 
 <span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;90% Credible Interval of (A - B)/B\n&#34;</span>)
-</code></pre></div><pre><code>#&gt; 90% Credible Interval of (A - B)/B
+</code></pre></div><pre tabindex="0"><code>#&gt; 90% Credible Interval of (A - B)/B
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">quantile</span>(sample_diff, probs <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.05</span>, <span style="color:#ae81ff">0.95</span>))
-</code></pre></div><pre><code>#&gt;           5%          95% 
+</code></pre></div><pre tabindex="0"><code>#&gt;           5%          95% 
 #&gt; -0.003346881  0.030199500
 </code></pre><p>We can also use the cumulative probability for more analysis. For example, using the cumulative probability curve we can expect that there is 25% chance that variant A is 2% better than variant B.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">plot</span>( <span style="color:#a6e22e">ecdf</span>(sample_diff), 
@@ -1688,7 +1688,7 @@ AB1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">bayesTe
                  )
 
 <span style="color:#a6e22e">summary</span>(AB1)
-</code></pre></div><pre><code>#&gt; Quantiles of posteriors for A and B:
+</code></pre></div><pre tabindex="0"><code>#&gt; Quantiles of posteriors for A and B:
 #&gt; 
 #&gt; $Probability
 #&gt; $Probability$A
@@ -1735,7 +1735,7 @@ AB1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">bayesTe
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">data_hotel <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;data_input/Website Results.csv&#34;</span>)
 
 <span style="color:#a6e22e">glimpse</span>(data_hotel)
-</code></pre></div><pre><code>#&gt; Rows: 1,451
+</code></pre></div><pre tabindex="0"><code>#&gt; Rows: 1,451
 #&gt; Columns: 4
 #&gt; $ variant        &lt;chr&gt; &quot;A&quot;, &quot;A&quot;, &quot;A&quot;, &quot;A&quot;, &quot;A&quot;, &quot;A&quot;, &quot;A&quot;, &quot;A&quot;, &quot;A&quot;, &quot;A&quot;, &quot;A...
 #&gt; $ converted      &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FAL...
@@ -1753,7 +1753,7 @@ AB1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">bayesTe
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">data_hotel <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">is.na</span>() <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">colSums</span>()
-</code></pre></div><pre><code>#&gt;        variant      converted length_of_stay        revenue 
+</code></pre></div><pre tabindex="0"><code>#&gt;        variant      converted length_of_stay        revenue 
 #&gt;              0              0              0              0
 </code></pre><p>To help us easier to understand what each variant is, we will convert them into <code>control</code> and <code>treatment</code> group.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">data_hotel <span style="color:#f92672">&lt;-</span> data_hotel <span style="color:#f92672">%&gt;%</span> 
@@ -1781,7 +1781,7 @@ AB1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">bayesTe
   <span style="color:#a6e22e">pivot_wider</span>(names_from <span style="color:#f92672">=</span> converted, values_from <span style="color:#f92672">=</span> n) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">setNames</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;variant&#34;</span>, <span style="color:#e6db74">&#34;not_converted&#34;</span>, <span style="color:#e6db74">&#34;converted&#34;</span>)) <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">mutate</span>(conversion_rate <span style="color:#f92672">=</span> converted <span style="color:#f92672">/</span> (converted <span style="color:#f92672">+</span> not_converted))
-</code></pre></div><pre><code>#&gt; # A tibble: 2 x 4
+</code></pre></div><pre tabindex="0"><code>#&gt; # A tibble: 2 x 4
 #&gt;   variant   not_converted converted conversion_rate
 #&gt;   &lt;chr&gt;             &lt;int&gt;     &lt;int&gt;           &lt;dbl&gt;
 #&gt; 1 control             701        20          0.0277
@@ -1804,7 +1804,7 @@ AB2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">bayesTe
                  )
 
 <span style="color:#a6e22e">summary</span>(AB2)
-</code></pre></div><pre><code>#&gt; Quantiles of posteriors for A and B:
+</code></pre></div><pre tabindex="0"><code>#&gt; Quantiles of posteriors for A and B:
 #&gt; 
 #&gt; $Probability
 #&gt; $Probability$A
@@ -1844,15 +1844,15 @@ AB2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">bayesTe
 posterior_b <span style="color:#f92672">&lt;-</span> AB2<span style="color:#f92672">$</span>posteriors<span style="color:#f92672">$</span>Probability<span style="color:#f92672">$</span>B
 
 <span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;90% Credible Interval of Treatment Variant\n&#34;</span>)
-</code></pre></div><pre><code>#&gt; 90% Credible Interval of Treatment Variant
+</code></pre></div><pre tabindex="0"><code>#&gt; 90% Credible Interval of Treatment Variant
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">quantile</span>(posterior_a, probs <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.05</span>, <span style="color:#ae81ff">0.5</span>,<span style="color:#ae81ff">0.95</span>))
-</code></pre></div><pre><code>#&gt;         5%        50%        95% 
+</code></pre></div><pre tabindex="0"><code>#&gt;         5%        50%        95% 
 #&gt; 0.03555704 0.04662847 0.05965968
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;\n90% Credible Interval of Control Variant\n&#34;</span>)
-</code></pre></div><pre><code>#&gt; 
+</code></pre></div><pre tabindex="0"><code>#&gt; 
 #&gt; 90% Credible Interval of Control Variant
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">quantile</span>(posterior_b, probs <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.05</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.95</span>))
-</code></pre></div><pre><code>#&gt;         5%        50%        95% 
+</code></pre></div><pre tabindex="0"><code>#&gt;         5%        50%        95% 
 #&gt; 0.01824963 0.02641531 0.03664246
 </code></pre><p>The 90% credible interval shows that the conversion rate for the <code>treatment</code> group is somewhere around 3.55% to 5.96% while the <code>control</code> group is between 1.82% and 3.66%. This clearly shows that the new treatment variant is better. Based on the posterior simulation, out of 1,000,000 trials we can expect that the treatment group is 98.6% better than the control group. You can also expect that there is around 32% chance that the new variant (treatment variant) is 100% or better than the control variant based on the cumulative probability. There is almost 0% chance that the treatment is worst than the control group.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">sample_diff <span style="color:#f92672">&lt;-</span> (posterior_a <span style="color:#f92672">-</span> posterior_b) <span style="color:#f92672">/</span> posterior_b
